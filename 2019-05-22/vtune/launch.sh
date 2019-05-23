@@ -5,9 +5,9 @@ module load vtune
 module unload darshan
 
 cd ~/JANA2
-git checkout fc416f
+git checkout a9683c
 scons --clean
-scons -j8
+scons -j8 VTUNE=1
 
 cd ~/jana-perf-testing/2019-05-22/vtune
 

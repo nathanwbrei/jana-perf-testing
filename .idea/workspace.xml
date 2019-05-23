@@ -10,13 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffcb84fc-c30b-47c2-8361-971f35669d31" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/2019-05-22-1/jana.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2019-05-22-1/jtest.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2019-05-22-2/jana.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2019-05-22-2/jtest.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2019-05-22-3/jana.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/2019-05-22-3/jtest.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019-05-22/exp1/jtest.sh" beforeDir="false" afterPath="$PROJECT_DIR$/2019-05-22/exp1/jtest.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019-05-22/exp2/jtest.sh" beforeDir="false" afterPath="$PROJECT_DIR$/2019-05-22/exp2/jtest.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019-05-22/exp3/jtest.sh" beforeDir="false" afterPath="$PROJECT_DIR$/2019-05-22/exp3/jtest.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019-05-22/exp4/jtest.sh" beforeDir="false" afterPath="$PROJECT_DIR$/2019-05-22/exp4/jtest.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019-05-22/launch.sh" beforeDir="false" afterPath="$PROJECT_DIR$/2019-05-22/launch.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019-05-22/vtune/jana.config" beforeDir="false" afterPath="$PROJECT_DIR$/2019-05-22/vtune/jana.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/2019-05-22/vtune/launch.sh" beforeDir="false" afterPath="$PROJECT_DIR$/2019-05-22/vtune/launch.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,88 +26,89 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.8339819">
+    <splitter split-orientation="horizontal" split-proportion="0.42320156">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/plot_rate_vs_nthreads.py">
+            <entry file="file://$PROJECT_DIR$/2019-05-22/exp1/jtest.sh">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1215">
-                  <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
-                  <folding>
-                    <element signature="e#411#429#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/varying_block_size.png">
-              <provider selected="true" editor-type-id="images" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/2019-05-22-1/jtest.sh">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/2019-05-22-2/jana.config">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/2019-05-22-2/jtest.sh">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/2019-05-22-3/jana.config">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                  <caret line="4" selection-start-line="4" selection-end-line="4" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/2019-05-22-3/jtest.sh">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+                <state relative-caret-position="165">
+                  <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/2019-05-22-1/jana.config">
+            <entry file="file://$PROJECT_DIR$/2019-05-22/launch.sh">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+                <state relative-caret-position="315">
+                  <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/exp6/plot.png">
-              <provider selected="true" editor-type-id="images" />
+            <entry file="file://$PROJECT_DIR$/2019-05-22/exp2/jtest.sh">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+                </state>
+              </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/exp7/plot.png">
-              <provider selected="true" editor-type-id="images" />
+            <entry file="file://$PROJECT_DIR$/2019-05-22/vtune/jana.config">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="420">
+                  <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/2019-05-22/exp3/jtest.sh">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/2019-05-22/vtune/jtest.sh">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/2019-05-22/exp4/jtest.sh">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/2019-05-22/vtune/launch.sh">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="135">
+                  <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/2019-05-22/exp1/jana.config">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="405">
+                  <caret line="27" selection-start-line="27" selection-end-line="27" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/2019-05-17/exp1/stdout.txt">
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
         </leaf>
@@ -114,10 +116,10 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/plot_rate_vs_nthreads.py">
+            <entry file="file://$PROJECT_DIR$/plothelper.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1200">
-                  <caret line="80" selection-start-line="80" selection-end-line="80" />
+                <state relative-caret-position="840">
+                  <caret line="57" selection-start-line="57" selection-end-line="57" />
                   <folding>
                     <element signature="e#411#429#0" expanded="true" />
                   </folding>
@@ -126,17 +128,21 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/exp2/plot_rate_vs_nthreads.py">
+            <entry file="file://$PROJECT_DIR$/2019-05-17/plot.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="525">
+                  <caret line="35" selection-start-line="35" selection-end-line="35" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/2019-05-17/exp2/rates.dat">
               <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/exp2/rates.dat">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/exp3/jtest.sh">
+            <entry file="file://$PROJECT_DIR$/2019-05-17/exp3/jtest.sh">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="180">
                   <caret line="12" selection-start-line="12" selection-end-line="12" />
@@ -144,33 +150,33 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/varying_opt_levels.png">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/2019-05-17/varying_opt_levels.png">
               <provider selected="true" editor-type-id="images" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/exp7/slurm-21517227.out">
+            <entry file="file://$PROJECT_DIR$/2019-05-17/exp7/slurm-21517227.out">
               <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/exp7/slurm-21486220.out">
+            <entry file="file://$PROJECT_DIR$/2019-05-17/exp7/slurm-21486220.out">
               <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/exp7/samples.dat">
+            <entry file="file://$PROJECT_DIR$/2019-05-17/exp7/samples.dat">
               <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/exp7/stdout.txt">
+            <entry file="file://$PROJECT_DIR$/2019-05-17/exp7/stdout.txt">
               <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/varying_event_size.png">
+            <entry file="file://$PROJECT_DIR$/2019-05-17/varying_event_size.png">
               <provider selected="true" editor-type-id="images" />
             </entry>
           </file>
@@ -179,6 +185,11 @@
     </splitter>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Nathan Brei &lt;nbrei@jlab.org&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -191,6 +202,18 @@
         <option value="$PROJECT_DIR$/2019-05-22-3/jana.config" />
         <option value="$PROJECT_DIR$/2019-05-22-2/jana.config" />
         <option value="$PROJECT_DIR$/2019-05-22-1/jana.config" />
+        <option value="$PROJECT_DIR$/2019-05-22-4/jana.config" />
+        <option value="$PROJECT_DIR$/2019-05-22-4/jtest.sh" />
+        <option value="$PROJECT_DIR$/plothelper.py" />
+        <option value="$PROJECT_DIR$/2019-05-17/exp7/plot.py" />
+        <option value="$PROJECT_DIR$/2019-05-22/exp1/launch.sh" />
+        <option value="$PROJECT_DIR$/2019-05-22/vtune/jana.config" />
+        <option value="$PROJECT_DIR$/2019-05-22/vtune/launch.sh" />
+        <option value="$PROJECT_DIR$/2019-05-22/exp4/jtest.sh" />
+        <option value="$PROJECT_DIR$/2019-05-22/exp3/jtest.sh" />
+        <option value="$PROJECT_DIR$/2019-05-22/exp2/jtest.sh" />
+        <option value="$PROJECT_DIR$/2019-05-22/exp1/jtest.sh" />
+        <option value="$PROJECT_DIR$/2019-05-22/launch.sh" />
       </list>
     </option>
   </component>
@@ -204,6 +227,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -214,58 +238,36 @@
             <path>
               <item name="perftest" type="b2602c69:ProjectViewProjectNode" />
               <item name="perftest" type="462c0819:PsiDirectoryNode" />
-              <item name="2019-05-22-1" type="462c0819:PsiDirectoryNode" />
+              <item name="2019-05-22" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="perftest" type="b2602c69:ProjectViewProjectNode" />
               <item name="perftest" type="462c0819:PsiDirectoryNode" />
-              <item name="2019-05-22-2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="perftest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="perftest" type="462c0819:PsiDirectoryNode" />
-              <item name="2019-05-22-3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="perftest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="perftest" type="462c0819:PsiDirectoryNode" />
+              <item name="2019-05-22" type="462c0819:PsiDirectoryNode" />
               <item name="exp1" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="perftest" type="b2602c69:ProjectViewProjectNode" />
               <item name="perftest" type="462c0819:PsiDirectoryNode" />
+              <item name="2019-05-22" type="462c0819:PsiDirectoryNode" />
               <item name="exp2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="perftest" type="b2602c69:ProjectViewProjectNode" />
               <item name="perftest" type="462c0819:PsiDirectoryNode" />
+              <item name="2019-05-22" type="462c0819:PsiDirectoryNode" />
               <item name="exp3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="perftest" type="b2602c69:ProjectViewProjectNode" />
               <item name="perftest" type="462c0819:PsiDirectoryNode" />
+              <item name="2019-05-22" type="462c0819:PsiDirectoryNode" />
               <item name="exp4" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="perftest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="perftest" type="462c0819:PsiDirectoryNode" />
-              <item name="exp5" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="perftest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="perftest" type="462c0819:PsiDirectoryNode" />
-              <item name="exp6" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="perftest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="perftest" type="462c0819:PsiDirectoryNode" />
-              <item name="exp7" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,6 +285,8 @@
       <recent name="$PROJECT_DIR$/2019-05-22-1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/2019-05-22" />
+      <recent name="$PROJECT_DIR$/2019-05-17" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -311,7 +315,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot_rate_vs_nthreads.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plothelper.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -338,29 +342,39 @@
       <updated>1558466089339</updated>
       <workItem from="1558466090801" duration="1824000" />
       <workItem from="1558468459892" duration="6697000" />
-      <workItem from="1558536011452" duration="6282000" />
+      <workItem from="1558536011452" duration="12298000" />
+      <workItem from="1558637010625" duration="270000" />
     </task>
+    <task id="LOCAL-00001" summary="Cori KNL experiments round 2">
+      <created>1558550976569</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1558550976569</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14803000" />
+    <option name="totallyTimeSpent" value="21089000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1918" height="1078" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17750533" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08848614" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3294686" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3294686" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.18743962" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3294686" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.18743962" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -371,128 +385,223 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Cori KNL experiments round 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cori KNL experiments round 2" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/exp4/plot.png">
+    <entry file="file://$PROJECT_DIR$/2019-05-17/exp4/plot.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/exp5/plot.png">
+    <entry file="file://$PROJECT_DIR$/2019-05-17/exp5/plot.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/exp6/samples.dat">
+    <entry file="file://$PROJECT_DIR$/2019-05-17/exp6/samples.dat">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/varying_opt_level.png" />
-    <entry file="file://$PROJECT_DIR$/exp7/jtest.sh">
+    <entry file="file://$PROJECT_DIR$/2019-05-17/exp7/jtest.sh">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/exp7/plot_rate_vs_nthreads.py">
+    <entry file="file://$PROJECT_DIR$/2019-05-17/exp7/plot_rate_vs_nthreads.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/exp1/jtest.sh">
+    <entry file="file://$PROJECT_DIR$/2019-05-17/exp1/jtest.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exp1/plot.png">
+    <entry file="file://$PROJECT_DIR$/2019-05-17/exp1/plot.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/exp2/plot.png">
+    <entry file="file://$PROJECT_DIR$/2019-05-17/exp2/plot.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/exp3/plot.png">
+    <entry file="file://$PROJECT_DIR$/2019-05-17/exp3/plot.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/exp6/plot.png">
+    <entry file="file://$PROJECT_DIR$/2019-05-17/exp6/plot.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/exp7/plot.png">
+    <entry file="file://$PROJECT_DIR$/2019-05-17/exp7/plot.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/plot_rate_vs_nthreads.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
-          <folding>
-            <element signature="e#411#429#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exp2/plot_rate_vs_nthreads.py">
+    <entry file="file://$PROJECT_DIR$/2019-05-17/exp2/plot_rate_vs_nthreads.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/exp2/rates.dat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/varying_opt_levels.png">
+    <entry file="file://$PROJECT_DIR$/2019-05-17/varying_block_size.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/exp7/slurm-21517227.out">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exp7/slurm-21486220.out">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exp7/samples.dat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exp7/stdout.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/varying_event_size.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exp3/jtest.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/varying_block_size.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2019-05-22-1/jtest.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2019-05-22-2/jtest.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="53" lean-forward="true" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2019-05-22-3/jtest.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/2019-05-22-3/jana.config">
+    <entry file="file://$PROJECT_DIR$/2019-05-22/exp3/jana.config">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2019-05-22-2/jana.config">
+    <entry file="file://$PROJECT_DIR$/2019-05-22/exp4/jana.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019-05-22/exp2/jana.config">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="61" selection-start-line="4" selection-start-column="61" selection-end-line="4" selection-end-column="61" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2019-05-22-1/jana.config">
+    <entry file="file://$PROJECT_DIR$/2019-05-17/exp1/slurm-21486220.out">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019-05-17/exp1/stdout.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plothelper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="e#411#429#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019-05-17/plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019-05-17/exp2/rates.dat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019-05-17/exp3/jtest.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019-05-17/exp7/slurm-21517227.out">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019-05-17/exp7/slurm-21486220.out">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019-05-17/exp7/samples.dat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019-05-17/exp7/stdout.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019-05-17/varying_event_size.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019-05-17/varying_opt_levels.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019-05-22/vtune/jana.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019-05-22/vtune/jtest.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019-05-22/vtune/launch.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019-05-22/exp1/jana.config">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019-05-22/exp4/jtest.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019-05-22/exp3/jtest.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019-05-22/exp2/jtest.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019-05-22/exp1/jtest.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/2019-05-22/launch.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
