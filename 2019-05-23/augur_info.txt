@@ -1,20 +1,20 @@
 
 
-Job Index:	66898529
+Job Index:	66898578
 User Name:	nbrei
 Job Name:	jtest_scaling
 Project: 	gluex
 Queue:		priority
-Hostname:	farm180110
+Hostname:	farm180122
 CPU Req: 	40 centos7 core requested
 MemoryReq:	16 GB
 Status:		ACTIVE
 
-Submit Time:		2019-05-23 17:00:27.0
+Submit Time:		2019-05-23 17:34:24.0
 Dependency Start:	null
-Pending Start:		2019-05-23 17:00:27.0
-StagingIn Start: 	2019-05-23 17:00:35.0
-Active Start:		2019-05-23 17:00:35.0
+Pending Start:		2019-05-23 17:34:24.0
+StagingIn Start: 	2019-05-23 17:36:12.0
+Active Start:		2019-05-23 17:36:12.0
 StagingOut Start:	null
 Completion Time:	null
 
@@ -25,29 +25,25 @@ Output:	/home/nbrei/jana-perf-testing/2019-05-23/samples.dat (PENDING)
 Output:	/home/nbrei/jana-perf-testing/2019-05-23/stderr.txt (PENDING)
 Output:	/home/nbrei/jana-perf-testing/2019-05-23/stdout.txt (PENDING)
 
-[PBS JobId: 51985738]
-Auger JobId: 66898529.farmpbs14
+[PBS JobId: 51986389]
+Auger JobId: 66898578.farmpbs14
     Job_Name = jtest_scaling
     Job_Owner = nbrei@farmpbs14
-    resources_used.cput = 00:14:57
-    resources_used.mem = 97736kb
-    resources_used.vmem = 5740196kb
-    resources_used.walltime = 00:01:50
     job_state = R
     queue = priority
     server = farmpbs14
     Account_Name = halld
     Checkpoint = u
-    ctime = Thu May 23 17:00:27 2019
-    Error_Path = farmpbs14:/tmp/jtest_scaling.e51985738
-    exec_host = farm180110/0+farm180110/1+farm180110/2+farm180110/3+farm180110
-	/4+farm180110/5+farm180110/6+farm180110/7+farm180110/8+farm180110/9+fa
-	rm180110/10+farm180110/11+farm180110/12+farm180110/13+farm180110/14+fa
-	rm180110/15+farm180110/16+farm180110/17+farm180110/18+farm180110/19+fa
-	rm180110/20+farm180110/21+farm180110/22+farm180110/23+farm180110/24+fa
-	rm180110/25+farm180110/26+farm180110/27+farm180110/28+farm180110/29+fa
-	rm180110/30+farm180110/31+farm180110/32+farm180110/33+farm180110/34+fa
-	rm180110/35+farm180110/36+farm180110/37+farm180110/38+farm180110/39
+    ctime = Thu May 23 17:36:00 2019
+    Error_Path = farmpbs14:/tmp/jtest_scaling.e51986389
+    exec_host = farm180122/0+farm180122/1+farm180122/2+farm180122/3+farm180122
+	/4+farm180122/5+farm180122/6+farm180122/7+farm180122/8+farm180122/9+fa
+	rm180122/10+farm180122/11+farm180122/12+farm180122/13+farm180122/14+fa
+	rm180122/15+farm180122/16+farm180122/17+farm180122/18+farm180122/19+fa
+	rm180122/20+farm180122/21+farm180122/22+farm180122/23+farm180122/24+fa
+	rm180122/25+farm180122/26+farm180122/27+farm180122/28+farm180122/29+fa
+	rm180122/30+farm180122/31+farm180122/32+farm180122/33+farm180122/34+fa
+	rm180122/35+farm180122/36+farm180122/37+farm180122/38+farm180122/39
     exec_port = 15003+15003+15003+15003+15003+15003+15003+15003+15003+15003+15
 	003+15003+15003+15003+15003+15003+15003+15003+15003+15003+15003+15003+
 	15003+15003+15003+15003+15003+15003+15003+15003+15003+15003+15003+1500
@@ -56,10 +52,10 @@ Auger JobId: 66898529.farmpbs14
     Join_Path = n
     Keep_Files = n
     Mail_Points = n
-    mtime = Thu May 23 17:00:33 2019
+    mtime = Thu May 23 17:36:03 2019
     Output_Path = farmpbs14:/dev/null
     Priority = 0
-    qtime = Thu May 23 17:00:27 2019
+    qtime = Thu May 23 17:36:00 2019
     Rerunable = False
     Resource_List.arch = centos7
     Resource_List.file = 2929687kb
@@ -69,24 +65,24 @@ Auger JobId: 66898529.farmpbs14
     Resource_List.nodes = 1:ppn=40
     Resource_List.vmem = 16384mb
     Resource_List.walltime = 04:00:00
-    session_id = 324414
+    session_id = 309459
     Shell_Path_List = /bin/tcsh
     substate = 42
-    Variable_List = PBS_O_QUEUE=priority,PBS_O_HOME=/,AUGER_ID=66898529,
+    Variable_List = PBS_O_QUEUE=priority,PBS_O_HOME=/,AUGER_ID=66898578,
 	PBS_O_WORKDIR=/usr/local/auger3.5/etc,PBS_O_HOST=farmpbs14,
 	PBS_O_SERVER=farmpbs
     euser = nbrei
     egroup = enp
-    hashname = 51985738.farmpbs14
-    queue_rank = 51891894
+    hashname = 51986389.farmpbs14
+    queue_rank = 51892545
     queue_type = E
-    etime = Thu May 23 17:00:27 2019
+    etime = Thu May 23 17:36:00 2019
     submit_args = -h
-    start_time = Thu May 23 17:00:33 2019
-    Walltime.Remaining = 14198
+    start_time = Thu May 23 17:36:03 2019
+    Walltime.Remaining = 14313
     start_count = 1
     fault_tolerant = False
     job_radix = 0
     submit_host = farmpbs14
-    x = 66898529
+    x = 66898578
 
