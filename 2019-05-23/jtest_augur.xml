@@ -1,0 +1,20 @@
+<Request>
+	<Email email="nbrei@jlab.org" request="false" job="true"/>
+	<Project name="gluex"/>
+	<Track name="debug"/>
+	<Name name="jtest_scaling"/>
+	<CPU core="40"/>
+	<Memory space="16" unit="GB"/>
+	<Command><![CDATA[ 
+		/home/nbrei/jana-perf-testing/2019-05-23/jtest_augur.sh
+		]]></Command>
+	<Job>
+        <Input src="/home/nbrei/jana-perf-testing/2019-05-23/jana.config" dest="jana.config"/>
+		<Output src="stdout.txt" dest="/home/nbrei/jana-perf-testing/2019-05-23/stdout.txt"/>
+		<Output src="stderr.txt" dest="/home/nbrei/jana-perf-testing/2019-05-23/stderr.txt"/>
+		<Output src="cpuinfo.txt" dest="/home/nbrei/jana-perf-testing/2019-05-23/cpuinfo.txt"/>
+		<Output src="JANA_Test_Results/rates.dat" dest="/home/nbrei/jana-perf-testing/2019-05-23/rates.dat"/>
+		<Output src="JANA_Test_Results/samples.dat" dest="/home/nbrei/jana-perf-testing/2019-05-23/samples.dat"/>
+	</Job>
+</Request>
+
