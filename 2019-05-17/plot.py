@@ -27,8 +27,8 @@ plot3.filename = "varying_event_size"
 plot3.title = "Cori KNL: Varying event size"
 
 plot3.add_exp('exp1', 'blocksize=2MB, eventsize=0.5MB', 'green')
-plot3.add_exp('exp2', 'blocksize=4MB, eventsize=1MB', 'blue')
-plot3.add_exp('exp3', 'blocksize=8MB, eventsize=2MB', 'cyan')
+plot3.add_exp('exp2', 'blocksize=2MB, eventsize=1MB', 'blue')
+plot3.add_exp('exp3', 'blocksize=2MB, eventsize=2MB', 'cyan')
 
 plot3.create()
 
