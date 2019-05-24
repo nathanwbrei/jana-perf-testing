@@ -9,7 +9,6 @@
 		/home/nbrei/jana-perf-testing/old_jtest_scaling/jtest_augur.sh
 		]]></Command>
 	<List name="exp">
-		/home/nbrei/jana-perf-testing/old_jtest_scaling/exp3
 		/home/nbrei/jana-perf-testing/old_jtest_scaling/exp4
 	</List>
     <ForEach list="exp">

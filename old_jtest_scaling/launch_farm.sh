@@ -11,6 +11,8 @@ git checkout ecb66f
 scons --clean
 scons -j8
 
-cd /home/nbrei/jana-perf-testing/old_jtest_scaling
+cd /home/nbrei/jana-perf-testing/old_jtest_scaling/exp3
+jsub -xml jtest_augur.xml
 
+cd /home/nbrei/jana-perf-testing/old_jtest_scaling/exp4
 jsub -xml jtest_augur.xml
