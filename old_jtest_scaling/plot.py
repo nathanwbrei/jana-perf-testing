@@ -36,13 +36,16 @@ class PlotDef:
         plt.title(self.title)
         plt.xlabel('Nthreads')
         plt.ylabel('Rate (Hz)')
+        min_nthreads = 100
+        max_nthreads = 0
+
         for exp in self.exps:
             fname = exp.dir + "/rates.dat"
 
             # Load data using numpy
             nthreads,avg_rate,rms_rate = np.loadtxt(fname, skiprows=1,usecols=(0,1,2), unpack=True)
-            minnthreads = nthreads.min()
-            maxnthreads = nthreads.max()
+            min_nthreads = min(min_nthreads, nthreads.min())
+            max_nthreads = max(max_nthreads, nthreads.max())
 
             # Create plot using matplotlib
             plt.errorbar(nthreads, avg_rate, rms_rate,
@@ -50,10 +53,10 @@ class PlotDef:
                          elinewidth=1, capthick=1, marker='o',
                          ms=6, markerfacecolor=exp.color, label=exp.label)
 
-            plt.xlim(minnthreads-1.0, maxnthreads+1.0)
-            plt.grid(True)
 
         plt.legend()
+        plt.xlim(min_nthreads-1.0, max_nthreads+1.0)
+        plt.grid(True)
         plt.savefig(self.filename + ".png")
 
 
