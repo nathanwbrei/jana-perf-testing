@@ -1,0 +1,28 @@
+<Request>
+	<Email email="nbrei@jlab.org" request="false" job="true"/>
+	<Project name="gluex"/>
+	<Track name="debug"/>
+	<Name name="jtest_scaling"/>
+	<CPU core="80"/>
+	<Memory space="16" unit="GB"/>
+	<Command><![CDATA[ 
+		/home/nbrei/jana-perf-testing/event_size_scaling/augur.sh
+		]]></Command>
+	<List name="exp">
+		/home/nbrei/jana-perf-testing/event_size_scaling/exp5
+		/home/nbrei/jana-perf-testing/event_size_scaling/exp6
+		/home/nbrei/jana-perf-testing/event_size_scaling/exp7
+		/home/nbrei/jana-perf-testing/event_size_scaling/exp8
+	</List>
+    <ForEach list="exp">
+		<Job>
+			<Input src="${exp}/jana.config" dest="jana.config"/>
+			<Output src="cpuinfo.txt" dest="${exp}/cpuinfo.txt"/>
+			<Output src="JANA_Test_Results/rates.dat" dest="${exp}/rates.dat"/>
+			<Output src="JANA_Test_Results/samples.dat" dest="${exp}/samples.dat"/>
+			<Stdout dest="${exp}/stdout.txt"/>
+			<Stderr dest="${exp}/stderr.txt"/>
+		</Job>
+	</ForEach>
+</Request>
+
