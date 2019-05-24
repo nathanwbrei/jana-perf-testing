@@ -15,10 +15,11 @@ import matplotlib.pyplot as plt
 
 
 class Experiment:
-    def __init__(self, dir, label, color):
+    def __init__(self, dir, label, color, marker):
         self.dir = dir
         self.label = label
         self.color = color
+        self.marker = marker
 
 
 class PlotDef:
@@ -28,8 +29,8 @@ class PlotDef:
         self.description = description
         self.exps = []
 
-    def add_exp(self, dir, label, color):
-        self.exps.append(Experiment(dir, label, color))
+    def add_exp(self, dir, label, color, marker):
+        self.exps.append(Experiment(dir, label, color, marker))
 
     def create(self):
         plt.figure()
@@ -50,7 +51,7 @@ class PlotDef:
             # Create plot using matplotlib
             plt.errorbar(nthreads, avg_rate, rms_rate,
                          linestyle='', ecolor='red',
-                         elinewidth=1, capthick=1, marker='o',
+                         elinewidth=1, capthick=1, marker=exp.marker,
                          ms=6, markerfacecolor=exp.color, label=exp.label)
 
 
@@ -65,9 +66,11 @@ plot1 = PlotDef()
 plot1.filename = "old_jtest_scaling"
 plot1.title = "Scaling of JTest (old)"
 
-plot1.add_exp('exp1', 'Cori KNL, old engine', 'green')
-plot1.add_exp('exp2', 'Cori KNL, new engine', 'blue')
-plot1.add_exp('exp3', 'JLab Farm, old engine', 'cyan')
-plot1.add_exp('exp4', 'JLab Farm, new engine', 'magenta')
+plot1.add_exp('exp1', 'Cori KNL, old engine', 'cyan', 'o')
+plot1.add_exp('exp2', 'Cori KNL, new engine', 'blue', 'o')
+plot1.add_exp('exp3', 'JLab Farm (50 cores), old engine', 'cyan', 'v')
+plot1.add_exp('exp4', 'JLab Farm (50 cores), new engine', 'blue', 'v')
+plot1.add_exp('exp5', 'JLab Farm (80 cores), old engine', 'cyan', 's')
+plot1.add_exp('exp6', 'JLab Farm (80 cores), new engine', 'blue', 's')
 
 plot1.create()

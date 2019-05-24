@@ -16,3 +16,9 @@ jsub -xml jtest_augur.xml
 
 cd /home/nbrei/jana-perf-testing/old_jtest_scaling/exp4
 jsub -xml jtest_augur.xml
+
+cd /home/nbrei/jana-perf-testing/old_jtest_scaling/exp5
+jsub -xml jtest_augur.xml
+
+cd /home/nbrei/jana-perf-testing/old_jtest_scaling/exp6
+jsub -xml jtest_augur.xml
