@@ -12,7 +12,15 @@ git checkout a9683c
 scons --clean
 scons -j8
 
-cd /home/nbrei/jana-perf-testing/new_jtest_scaling
-jsub -xml jtest_augur.xml
 
+cd /home/nbrei/jana-perf-testing/new_jtest_scaling/exp3
+jsub -xml augur.xml
 
+cd /home/nbrei/jana-perf-testing/new_jtest_scaling/exp4
+jsub -xml augur.xml
+
+cd /home/nbrei/jana-perf-testing/new_jtest_scaling/exp5
+jsub -xml augur.xml
+
+cd /home/nbrei/jana-perf-testing/new_jtest_scaling/exp6
+jsub -xml augur.xml
