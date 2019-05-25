@@ -63,8 +63,8 @@ class PlotDef:
 
 
 plot1 = PlotDef()
-plot1.filename = "old_jtest_scaling"
-plot1.title = "Scaling of JTest (old)"
+plot1.filename = "new_jtest_scaling"
+plot1.title = "Scaling of JTest (new)"
 
 plot1.add_exp('exp1', 'Cori KNL, old engine', 'cyan', 'o')
 plot1.add_exp('exp2', 'Cori KNL, new engine', 'blue', 'o')
