@@ -64,10 +64,10 @@ class PlotDef:
 plot1 = PlotDef()
 plot1.filename = "event_scaling"
 plot1.title = "JANA2 Event Size Scaling"
-plot1.add_exp('exp5', 'Farm 80, 0.5MB events', 'green', "s")
-plot1.add_exp('exp6', 'Farm 80, 2MB events', 'blue', "s")
-plot1.add_exp('exp7', 'Farm 80, 8MB events', 'cyan', "s")
-plot1.add_exp('exp8', 'Farm 80, 32MB events', 'magenta', "s")
+plot1.add_exp('exp5', 'Farm 18, 0.5MB events', 'green', "s")
+plot1.add_exp('exp6', 'Farm 18, 2MB events', 'blue', "s")
+plot1.add_exp('exp7', 'Farm 18, 8MB events', 'cyan', "s")
+plot1.add_exp('exp8', 'Farm 18, 32MB events', 'magenta', "s")
 plot1.add_exp('exp1', 'Cori KNL, 0.5MB events', 'green', "v")
 plot1.add_exp('exp2', 'Cori KNL, 2MB events', 'blue', "v")
 plot1.add_exp('exp3', 'Cori KNL, 8MB events', 'cyan', "v")
@@ -76,7 +76,7 @@ plot1.create()
 
 plot2 = PlotDef()
 plot2.filename = "event_scaling_farm"
-plot2.title = "JANA2 Event Size Scaling Performance (80-core farm node)"
+plot2.title = "JANA2 Event Size Scaling Performance (Farm 18)"
 plot2.add_exp('exp5', '0.5MB events', 'green', "o")
 plot2.add_exp('exp6', '2MB events', 'blue', "o")
 plot2.add_exp('exp7', '8MB events', 'cyan', "o")

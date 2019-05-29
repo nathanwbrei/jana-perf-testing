@@ -8,8 +8,8 @@ set -x  # Echo on
 
 cd /home/nbrei/src/jana2
 git checkout 5dd814e
-scons --clean
-scons -j8
+#scons --clean
+#scons -j8
 
 cd /home/nbrei/jana-perf-testing/event_size_scaling
 jsub -xml augur.xml

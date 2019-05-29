@@ -63,16 +63,16 @@ class PlotDef:
 
 
 plot1 = PlotDef()
-plot1.filename = "event_scaling"
-plot1.title = "JANA2 Event Size Scaling"
+plot1.filename = "comp_scaling"
+plot1.title = "JANA2 computation scaling"
 
-plot1.add_exp('exp1', 'Cori KNL, 20 ms-of-flops', 'green', "")
-plot1.add_exp('exp2', 'Cori KNL, 200 ms-of-flops', 'blue', "")
-plot1.add_exp('exp3', 'Cori KNL, 2000 ms-of-flops', 'cyan', "")
-plot1.add_exp('exp4', 'Cori KNL, 20000 ms-of-flops', 'magenta', "")
-plot1.add_exp('exp5', 'Farm (80 core), 20 ms-of-flops', 'green', "-")
-plot1.add_exp('exp6', 'Farm (80 core), 200 ms-of-flops', 'blue', "-")
-plot1.add_exp('exp7', 'Farm (80 core), 2000 ms-of-flops', 'cyan', "-")
-plot1.add_exp('exp8', 'Farm (80 core), 20000 ms-of-flops', 'magenta', "-")
+#plot1.add_exp('exp1', 'Cori KNL, 2.8e5 sqrt ops/event', 'green', "")
+#plot1.add_exp('exp2', 'Cori KNL, 2.8e6 sqrt ops/event', 'blue', "")
+#plot1.add_exp('exp3', 'Cori KNL, 2.8e7 sqrt ops/event', 'cyan', "")
+#plot1.add_exp('exp4', 'Cori KNL, 2.8e8 sqrt ops/event', 'magenta', "")
+plot1.add_exp('exp5', 'Farm 18, 2.8e5 sqrt ops/event', 'green', "-")
+plot1.add_exp('exp6', 'Farm 18, 2.8e6 sqrt ops/event', 'blue', "-")
+plot1.add_exp('exp7', 'Farm 18, 2.8e7 sqrt ops/event', 'cyan', "-")
+plot1.add_exp('exp8', 'Farm 18, 2.8e8 sqrt ops/event', 'magenta', "-")
 
 plot1.create()
