@@ -12,7 +12,7 @@ CPU family:            6
 Model:                 85
 Model name:            Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz
 Stepping:              4
-CPU MHz:               2394.371
+CPU MHz:               2394.376
 BogoMIPS:              4793.28
 Virtualization:        VT-x
 L1d cache:             32K
