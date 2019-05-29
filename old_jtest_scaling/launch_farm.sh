@@ -7,7 +7,7 @@ set -e  # Terminate script on error
 set -x  # Echo on
 
 cd /home/nbrei/src/jana2
-git checkout ecb66f
+git checkout 5dd814e
 scons --clean
 scons -j8
 

@@ -7,7 +7,7 @@ module swap craype-haswell craype-mic-knl
 module unload darshan
 
 cd ~/JANA2
-git checkout a9683c
+git checkout 5dd814e
 scons --clean
 scons -j8
 
