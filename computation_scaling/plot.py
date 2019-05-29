@@ -15,11 +15,11 @@ import matplotlib.pyplot as plt
 
 
 class Experiment:
-    def __init__(self, dir, label, color, line):
+    def __init__(self, dir, label, color, marker):
         self.dir = dir
         self.label = label
         self.color = color
-        self.line = line
+        self.marker = marker
 
 
 class PlotDef:
@@ -29,10 +29,10 @@ class PlotDef:
         self.description = description
         self.exps = []
 
-    def add_exp(self, dir, label, color, line):
-        self.exps.append(Experiment(dir, label, color, line=""))
+    def add_exp(self, dir, label, color, marker):
+        self.exps.append(Experiment(dir, label, color, marker))
 
-    def create(self):
+    def create(self, loc="best"):
         plt.figure()
         plt.title(self.title)
         plt.xlabel('Nthreads')
@@ -50,15 +50,16 @@ class PlotDef:
 
             # Create plot using matplotlib
             plt.errorbar(nthreads, avg_rate, rms_rate,
-                         linestyle=exp.line, ecolor='red',
-                         elinewidth=1, capthick=1, marker='o',
+                         linestyle='', ecolor='red',
+                         elinewidth=1, capthick=1, marker=exp.marker,
                          ms=6, markerfacecolor=exp.color, label=exp.label)
 
 
-        plt.legend()
+        plt.legend(loc=loc)
         plt.xlim(min_nthreads-1.0, max_nthreads+1.0)
         plt.grid(True)
         plt.savefig(self.filename + ".png")
+
 
 
 
@@ -66,13 +67,34 @@ plot1 = PlotDef()
 plot1.filename = "comp_scaling"
 plot1.title = "JANA2 computation scaling"
 
-#plot1.add_exp('exp1', 'Cori KNL, 2.8e5 sqrt ops/event', 'green', "")
-#plot1.add_exp('exp2', 'Cori KNL, 2.8e6 sqrt ops/event', 'blue', "")
-#plot1.add_exp('exp3', 'Cori KNL, 2.8e7 sqrt ops/event', 'cyan', "")
-#plot1.add_exp('exp4', 'Cori KNL, 2.8e8 sqrt ops/event', 'magenta', "")
-plot1.add_exp('exp5', 'Farm 18, 2.8e5 sqrt ops/event', 'green', "-")
-plot1.add_exp('exp6', 'Farm 18, 2.8e6 sqrt ops/event', 'blue', "-")
-plot1.add_exp('exp7', 'Farm 18, 2.8e7 sqrt ops/event', 'cyan', "-")
-plot1.add_exp('exp8', 'Farm 18, 2.8e8 sqrt ops/event', 'magenta', "-")
+plot1.add_exp('exp1', 'Cori KNL, 2.8e5 sqrt ops/event', 'green', "s")
+plot1.add_exp('exp2', 'Cori KNL, 2.8e6 sqrt ops/event', 'blue', "s")
+plot1.add_exp('exp3', 'Cori KNL, 2.8e7 sqrt ops/event', 'cyan', "s")
+plot1.add_exp('exp4', 'Cori KNL, 2.8e8 sqrt ops/event', 'magenta', "s")
+plot1.add_exp('exp5', 'Farm 18, 2.8e5 sqrt ops/event', 'green', "o")
+plot1.add_exp('exp6', 'Farm 18, 2.8e6 sqrt ops/event', 'blue', "o")
+plot1.add_exp('exp7', 'Farm 18, 2.8e7 sqrt ops/event', 'cyan', "o")
+plot1.add_exp('exp8', 'Farm 18, 2.8e8 sqrt ops/event', 'magenta', "o")
 
 plot1.create()
+
+plot2 = PlotDef()
+plot2.filename = "comp_scaling_coriknl"
+plot2.title = "JANA2 computation scaling, Cori KNL"
+
+plot2.add_exp('exp1', '2.8e5 sqrt ops/event', 'green', "s")
+plot2.add_exp('exp2', '2.8e6 sqrt ops/event', 'blue', "s")
+plot2.add_exp('exp3', '2.8e7 sqrt ops/event', 'cyan', "s")
+plot2.add_exp('exp4', '2.8e8 sqrt ops/event', 'magenta', "s")
+
+plot2.create(loc="upper right")
+
+plot3 = PlotDef()
+plot3.filename = "comp_scaling_farm18"
+plot3.title = "JANA2 computation scaling, Farm 18"
+
+plot3.add_exp('exp5', '2.8e5 sqrt ops/event', 'green', "o")
+plot3.add_exp('exp6', '2.8e6 sqrt ops/event', 'blue', "o")
+plot3.add_exp('exp7', '2.8e7 sqrt ops/event', 'cyan', "o")
+plot3.add_exp('exp8', '2.8e8 sqrt ops/event', 'magenta', "o")
+plot3.create(loc="center right")
