@@ -8,8 +8,8 @@ module unload darshan
 
 cd ~/JANA2
 git checkout 5dd814e
-scons --clean
-scons -j8
+#scons --clean
+#scons -j8
 
 cd ~/jana-perf-testing/block_size_scaling/exp1
 sbatch slurm.sh
