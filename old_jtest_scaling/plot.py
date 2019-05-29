@@ -68,9 +68,9 @@ plot1.title = "Scaling of JTest (old)"
 
 plot1.add_exp('exp1', 'Cori KNL, old engine', 'cyan', 'o')
 plot1.add_exp('exp2', 'Cori KNL, new engine', 'blue', 'o')
-plot1.add_exp('exp3', 'JLab Farm (50 cores), old engine', 'cyan', 'v')
-plot1.add_exp('exp4', 'JLab Farm (50 cores), new engine', 'blue', 'v')
-plot1.add_exp('exp5', 'JLab Farm (80 cores), old engine', 'cyan', 's')
-plot1.add_exp('exp6', 'JLab Farm (80 cores), new engine', 'blue', 's')
+plot1.add_exp('exp3', 'JLab Farm 14, old engine', 'cyan', 'v')
+plot1.add_exp('exp4', 'JLab Farm 14, new engine', 'blue', 'v')
+plot1.add_exp('exp5', 'JLab Farm 18, old engine', 'cyan', 's')
+plot1.add_exp('exp6', 'JLab Farm 18, new engine', 'blue', 's')
 
 plot1.create()

@@ -3,7 +3,7 @@
 	<Project name="gluex"/>
 	<Track name="debug"/>
 	<Name name="jtest_scaling"/>
-	<CPU core="40"/>
+	<CPU core="80"/>
 	<Memory space="16" unit="GB"/>
 	<Command><![CDATA[ 
 		/home/nbrei/jana-perf-testing/old_jtest_scaling/exp4/jtest_augur.sh
