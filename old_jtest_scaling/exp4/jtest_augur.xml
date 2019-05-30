@@ -3,6 +3,7 @@
 	<Project name="gluex"/>
 	<Track name="debug"/>
 	<Name name="jtest_scaling"/>
+	<NodeTag name="farm14"/>
 	<CPU core="48"/>
 	<Memory space="16" unit="GB"/>
 	<Command><![CDATA[ 

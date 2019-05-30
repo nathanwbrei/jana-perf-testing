@@ -12,8 +12,8 @@ CPU family:            6
 Model:                 63
 Model name:            Intel(R) Xeon(R) CPU E5-2670 v3 @ 2.30GHz
 Stepping:              2
-CPU MHz:               1199.953
-BogoMIPS:              4611.46
+CPU MHz:               1200.402
+BogoMIPS:              4612.41
 Virtualization:        VT-x
 L1d cache:             32K
 L1i cache:             32K

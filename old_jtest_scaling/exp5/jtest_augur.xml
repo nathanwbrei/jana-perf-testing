@@ -3,13 +3,14 @@
 	<Project name="gluex"/>
 	<Track name="debug"/>
 	<Name name="jtest_scaling"/>
+	<NodeTag name="farm18"/>
 	<CPU core="80"/>
 	<Memory space="16" unit="GB"/>
 	<Command><![CDATA[ 
-		/home/nbrei/jana-perf-testing/old_jtest_scaling/exp3/jtest_augur.sh
+		/home/nbrei/jana-perf-testing/old_jtest_scaling/exp5/jtest_augur.sh
 		]]></Command>
 	<List name="exp">
-		/home/nbrei/jana-perf-testing/old_jtest_scaling/exp3
+		/home/nbrei/jana-perf-testing/old_jtest_scaling/exp5
 	</List>
     <ForEach list="exp">
 		<Job>

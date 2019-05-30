@@ -7,9 +7,9 @@ set -e  # Terminate script on error
 set -x  # Echo on
 
 cd /home/nbrei/src/jana2
-git checkout 5dd814e
-scons --clean
-scons -j8
+git checkout 6a7addb3
+#scons --clean
+#scons -j8
 
 cd /home/nbrei/jana-perf-testing/old_jtest_scaling/exp3
 jsub -xml jtest_augur.xml
@@ -22,3 +22,4 @@ jsub -xml jtest_augur.xml
 
 cd /home/nbrei/jana-perf-testing/old_jtest_scaling/exp6
 jsub -xml jtest_augur.xml
+
