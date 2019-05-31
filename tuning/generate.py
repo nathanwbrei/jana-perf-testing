@@ -1,6 +1,7 @@
 
 import os
 from string import Template
+import testmatrix
 
 jana_config = """
 # $comment
@@ -36,8 +37,8 @@ slurm_sh = """#!/bin/bash
 #SBATCH --constraint=knl
 #SBATCH --cpus-per-task=${cores}
 
-export JANA_HOME="${jana_home_dir_cori}"
-export RESULTS_DIR="${results_dir_cori}/${expname}/${jobname}"
+export JANA_HOME="${jana_home_dir}"
+export RESULTS_DIR="${results_dir}/${expname}/${jobname}"
 
 lscpu > $$RESULTS_DIR/cpuinfo.txt
 
@@ -47,7 +48,7 @@ srun $$JANA_HOME/bin/jana -l $$RESULTS_DIR/jana.config -Pbenchmark:resultsdir=$$
 
 augur_sh = """#!/bin/bash
 
-export JANA_HOME="${jana_home_dir_farm}"
+export JANA_HOME="${jana_home_dir}"
 
 lscpu > cpuinfo.txt
 
@@ -65,10 +66,10 @@ augur_xml = """
     <CPU core="${cores}"/>
     <Memory space="16" unit="GB"/>
     <Command><![CDATA[ 
-        ${results_dir_farm}/${expname}/${jobname}/augur.sh
+        ${results_dir}/${expname}/${jobname}/augur.sh
         ]]></Command>
     <List name="exp">
-        ${results_dir_farm}/${expname}/${jobname}
+        ${results_dir}/${expname}/${jobname}
     </List>
     <ForEach list="exp">
         <Job>
@@ -92,7 +93,7 @@ launch_farm_sh ="""
 set -e  # Terminate script on error
 set -x  # Echo on
 
-cd ${jana_src_dir_farm}
+cd ${jana_src_dir}
 git checkout ${jana_git_commit}
 scons --clean
 scons -j8
@@ -100,7 +101,7 @@ scons -j8
 """
 
 launch_farm_sh_job = """
-cd ${results_dir_farm}/${expname}/${jobname}
+cd ${results_dir}/${expname}/${jobname}
 jsub -xml augur.xml
 """
 
@@ -128,30 +129,32 @@ sbatch slurm.sh
 """
 
 
-def generate(testcase):
+def generate_from_dict(d):
 
-    path = testcase.results_dir_local + "/" + testcase.expname + "/" + testcase.jobname
+    path = d["results_dir_local"] + "/" + d["expname"] + "/" + d["jobname"]
 
     if not os.path.exists(path):
         os.mkdir(path)
 
     with open(path + "/jana.config", "w") as f:
-        f.write(Template(jana_config).substitute(vars(testcase)))
+        f.write(Template(jana_config).substitute(d))
 
-    if testcase.platform == "coriknl":
+    if d["platform"] == "coriknl":
         with open(path + "/slurm.sh", "w") as f:
-            f.write(Template(slurm_sh).substitute(vars(testcase)))
+            f.write(Template(slurm_sh).substitute(d))
 
-    elif testcase.platform == "farm14" or testcase.platform == "farm18":
+    elif d["platform"] == "farm14" or d["platform"] == "farm18":
         with open(path + "/augur.sh", "w") as f:
-            f.write(Template(augur_sh).substitute(vars(testcase)))
+            f.write(Template(augur_sh).substitute(d))
 
         with open(path + "/augur.xml", "w") as f:
-            f.write(Template(augur_xml).substitute(vars(testcase)))
+            f.write(Template(augur_xml).substitute(d))
 
     else:
         raise Exception("Invalid platform!")
 
 
-
+if __name__ == "__main__":
+    for job in testmatrix.get_jobs():
+        generate_from_dict(job)
 
