@@ -39,7 +39,7 @@ augur_xml = """
     <Name name="jana2_${expname}_${jobname}"/>
     <NodeTag name="${platform}"/>
     <CPU core="${cores}"/>
-    <Memory space="16" unit="GB"/>
+    <Memory space="6" unit="GB"/>
     <Command><![CDATA[ 
         ${results_dir}/${expname}/${jobname}/augur.sh
         ]]></Command>

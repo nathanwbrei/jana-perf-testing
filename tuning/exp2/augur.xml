@@ -5,7 +5,7 @@
     <Name name="jana2_tuning_exp2"/>
     <NodeTag name="farm18"/>
     <CPU core="80"/>
-    <Memory space="16" unit="GB"/>
+    <Memory space="6" unit="GB"/>
     <Command><![CDATA[ 
         /home/nbrei/jana-perf-testing/tuning/exp2/augur.sh
         ]]></Command>
