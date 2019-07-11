@@ -8,7 +8,7 @@ module swap craype-haswell craype-mic-knl
 module unload darshan
 
 cd /home/nbrei/src/jana2
-git checkout a33521bdd5ff19b103162276718ae8e71f19eb51
+git checkout be8fc5d94a6f7bcb4159101b05dc0523cd3e037d
 scons --clean
 scons -j8
 

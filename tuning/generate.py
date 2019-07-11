@@ -1,5 +1,5 @@
 
-import os
+import os, stat
 from string import Template
 from testmatrix import TestMatrix
 
@@ -129,13 +129,17 @@ def generate_from_dict(d):
     if d["platform"] == "coriknl":
         with open(path + "/slurm.sh", "w") as f:
             f.write(Template(slurm_sh).substitute(d))
+        os.chmod(path+"/slurm.sh", stat.S_IREAD | stat.S_IWRITE | stat.S_IEXEC)
 
     elif d["platform"] == "farm14" or d["platform"] == "farm18":
+
         with open(path + "/augur.sh", "w") as f:
             f.write(Template(augur_sh).substitute(d))
 
         with open(path + "/augur.xml", "w") as f:
             f.write(Template(augur_xml).substitute(d))
+
+        os.chmod(path+"/augur.sh", stat.S_IREAD | stat.S_IWRITE | stat.S_IEXEC)
 
     else:
         raise Exception("Invalid platform!")
@@ -165,4 +169,6 @@ if __name__ == "__main__":
     with open(path + "/launch_cori.sh", "w") as f:
         f.write(launch_cori)
 
+    os.chmod(path+"/launch_farm.sh", stat.S_IREAD | stat.S_IWRITE | stat.S_IEXEC)
+    os.chmod(path+"/launch_cori.sh", stat.S_IREAD | stat.S_IWRITE | stat.S_IEXEC)
 

@@ -6,7 +6,7 @@ class TestMatrix:
     experiment = {
         "expname": "tuning",
         "comment": "Examine how different affinity/locality strategies affect throughput",
-        "git_commit": "a33521bdd5ff19b103162276718ae8e71f19eb51",
+        "git_commit": "be8fc5d94a6f7bcb4159101b05dc0523cd3e037d",
         "scenario": "JTest",
         "platform": "farm18",
         "results_dir_local": "/u/home/nbrei/jana-perf-testing",
