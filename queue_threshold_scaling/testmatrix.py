@@ -4,92 +4,44 @@ from collections import OrderedDict
 class TestMatrix:
 
     experiment = {
-        "expname": "tuning",
-        "comment": "Examine how different affinity/locality strategies affect throughput",
+        "expname": "queue_threshold_scaling",
+        "comment": "See how queue threshold affects JTestOld throughput",
         "git_commit": "a33521bdd5ff19b103162276718ae8e71f19eb51",
-        "scenario": "JTest",
+        "scenario": "JTestOld",
         "platform": "farm18",
         "results_dir_local": "/u/home/nbrei/jana-perf-testing",
-        "jana:event_queue_threshold": 80,
-        "jana:legacy_mode": 0,
     }
 
     jobs = [
         {
             "jobname": "exp1",
-            "jana:affinity": 0,
-            "jana:locality": 0,
+            "jana:legacy_mode": 1,
         },
         {
             "jobname": "exp2",
-            "jana:affinity": 0,
-            "jana:locality": 1,
+            "jana:legacy_mode": 0,
+            "jana:event_queue_threshold": 10,
         },
         {
             "jobname": "exp3",
-            "jana:affinity": 0,
-            "jana:locality": 2,
+            "jana:legacy_mode": 0,
+            "jana:event_queue_threshold": 40,
         },
         {
             "jobname": "exp4",
-            "jana:affinity": 0,
-            "jana:locality": 3,
+            "jana:legacy_mode": 0,
+            "jana:event_queue_threshold": 100,
         },
         {
             "jobname": "exp5",
-            "jana:affinity": 0,
-            "jana:locality": 4,
+            "jana:legacy_mode": 0,
+            "jana:event_queue_threshold": 400,
         },
         {
             "jobname": "exp6",
-            "jana:affinity": 1,
-            "jana:locality": 0,
+            "jana:legacy_mode": 0,
+            "jana:event_queue_threshold": 1000,
         },
-        {
-            "jobname": "exp7",
-            "jana:affinity": 1,
-            "jana:locality": 1,
-        },
-        {
-            "jobname": "exp8",
-            "jana:affinity": 1,
-            "jana:locality": 2,
-        },
-        {
-            "jobname": "exp9",
-            "jana:affinity": 1,
-            "jana:locality": 3,
-        },
-        {
-            "jobname": "exp10",
-            "jana:affinity": 1,
-            "jana:locality": 4,
-        },
-        {
-            "jobname": "exp11",
-            "jana:affinity": 2,
-            "jana:locality": 0,
-        },
-        {
-            "jobname": "exp12",
-            "jana:affinity": 2,
-            "jana:locality": 1,
-        },
-        {
-            "jobname": "exp13",
-            "jana:affinity": 2,
-            "jana:locality": 2,
-        },
-        {
-            "jobname": "exp14",
-            "jana:affinity": 2,
-            "jana:locality": 3,
-        },
-        {
-            "jobname": "exp15",
-            "jana:affinity": 2,
-            "jana:locality": 4,
-        }
     ]
 
     platforms = {
