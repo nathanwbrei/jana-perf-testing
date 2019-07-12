@@ -65,10 +65,13 @@ class PlotDef:
 
 plot1 = PlotDef()
 plot1.filename = "locality"
-plot1.title = "JANA2 locality strategies"
+plot1.title = "JANA2 locality strategies, no affinity"
 
-plot1.add_exp('exp1', 'No affinity, global locality', 'green', "s")
-plot1.add_exp('exp3', 'No affinity, NUMA domain locality', 'blue', "s")
+plot1.add_exp('exp1', 'Global', 'green', "s")
+plot1.add_exp('exp2', 'Socket', 'blue', "s")
+plot1.add_exp('exp3', 'NUMA domain', 'cyan', "s")
+plot1.add_exp('exp4', 'Core', 'black', "s")
+plot1.add_exp('exp5', 'CPU', 'magenta', "s")
 
 plot1.create(loc="lower right")
 
