@@ -101,3 +101,14 @@ plot3.add_exp('exp15', 'CPU', 'magenta', "s")
 plot3.create(loc="lower right")
 
 
+plot4 = PlotDef()
+plot4.filename = "comparison_of_best"
+plot4.title = "JANA2 affinity/locality tuning"
+
+plot4.add_exp('exp1', 'No affinity, global locality', 'green', "s")
+plot4.add_exp('exp13', 'Compute-bound affinity, NUMA locality', 'cyan', "o")
+plot4.add_exp('exp14', 'Compute-bound affinity, core locality', 'blue', "o")
+plot4.add_exp('exp6', 'Memory-bound affinity, global locality', 'black', "^")
+plot4.add_exp('exp9', 'Memory-bound affinity, core locality', 'blue', "^")
+
+plot4.create(loc="lower right")
