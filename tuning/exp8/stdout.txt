@@ -1,0 +1,444 @@
+============ Auger Job Index: 2798940 starts =================
+/bin/cp -p /home/nbrei/jana-perf-testing/tuning/exp8/jana.config jana.config
+JANA 2.0.0dev [Revision]
+Loaded config file 'jana.config'.
+
+Opening source "dummy_evt_src" - JTestParser : JTest Fake Event Source
+[INFO] 0: : Affinity strategy: memory-bound (favor fewer NUMA domains)
+Locality strategy: numa-domain-local
+Location count: 4
++--------+----------+-------+--------+-----------+--------+
+| worker | location |  cpu  |  core  | numa node | socket |
++--------+----------+-------+--------+-----------+--------+
+|      0 |        0 |     0 |      0 |         0 |      0 |
+|      1 |        0 |     1 |      1 |         0 |      0 |
+|      2 |        0 |     2 |      2 |         0 |      0 |
+|      3 |        0 |     5 |      5 |         0 |      0 |
+|      4 |        0 |     6 |      6 |         0 |      0 |
+|      5 |        0 |    10 |     10 |         0 |      0 |
+|      6 |        0 |    11 |     11 |         0 |      0 |
+|      7 |        0 |    12 |     12 |         0 |      0 |
+|      8 |        0 |    15 |     15 |         0 |      0 |
+|      9 |        0 |    16 |     16 |         0 |      0 |
+|     10 |        0 |    40 |      0 |         0 |      0 |
+|     11 |        0 |    41 |      1 |         0 |      0 |
+|     12 |        0 |    42 |      2 |         0 |      0 |
+|     13 |        0 |    45 |      5 |         0 |      0 |
+|     14 |        0 |    46 |      6 |         0 |      0 |
+|     15 |        0 |    50 |     10 |         0 |      0 |
+|     16 |        0 |    51 |     11 |         0 |      0 |
+|     17 |        0 |    52 |     12 |         0 |      0 |
+|     18 |        0 |    55 |     15 |         0 |      0 |
+|     19 |        0 |    56 |     16 |         0 |      0 |
+|     20 |        1 |     3 |      3 |         1 |      0 |
+|     21 |        1 |     4 |      4 |         1 |      0 |
+|     22 |        1 |     7 |      7 |         1 |      0 |
+|     23 |        1 |     8 |      8 |         1 |      0 |
+|     24 |        1 |     9 |      9 |         1 |      0 |
+|     25 |        1 |    13 |     13 |         1 |      0 |
+|     26 |        1 |    14 |     14 |         1 |      0 |
+|     27 |        1 |    17 |     17 |         1 |      0 |
+|     28 |        1 |    18 |     18 |         1 |      0 |
+|     29 |        1 |    19 |     19 |         1 |      0 |
+|     30 |        1 |    43 |      3 |         1 |      0 |
+|     31 |        1 |    44 |      4 |         1 |      0 |
+|     32 |        1 |    47 |      7 |         1 |      0 |
+|     33 |        1 |    48 |      8 |         1 |      0 |
+|     34 |        1 |    49 |      9 |         1 |      0 |
+|     35 |        1 |    53 |     13 |         1 |      0 |
+|     36 |        1 |    54 |     14 |         1 |      0 |
+|     37 |        1 |    57 |     17 |         1 |      0 |
+|     38 |        1 |    58 |     18 |         1 |      0 |
+|     39 |        1 |    59 |     19 |         1 |      0 |
+|     40 |        2 |    20 |     20 |         2 |      1 |
+|     41 |        2 |    21 |     21 |         2 |      1 |
+|     42 |        2 |    22 |     22 |         2 |      1 |
+|     43 |        2 |    25 |     25 |         2 |      1 |
+|     44 |        2 |    26 |     26 |         2 |      1 |
+|     45 |        2 |    30 |     30 |         2 |      1 |
+|     46 |        2 |    31 |     31 |         2 |      1 |
+|     47 |        2 |    32 |     32 |         2 |      1 |
+|     48 |        2 |    35 |     35 |         2 |      1 |
+|     49 |        2 |    36 |     36 |         2 |      1 |
+|     50 |        2 |    60 |     20 |         2 |      1 |
+|     51 |        2 |    61 |     21 |         2 |      1 |
+|     52 |        2 |    62 |     22 |         2 |      1 |
+|     53 |        2 |    65 |     25 |         2 |      1 |
+|     54 |        2 |    66 |     26 |         2 |      1 |
+|     55 |        2 |    70 |     30 |         2 |      1 |
+|     56 |        2 |    71 |     31 |         2 |      1 |
+|     57 |        2 |    72 |     32 |         2 |      1 |
+|     58 |        2 |    75 |     35 |         2 |      1 |
+|     59 |        2 |    76 |     36 |         2 |      1 |
+|     60 |        3 |    23 |     23 |         3 |      1 |
+|     61 |        3 |    24 |     24 |         3 |      1 |
+|     62 |        3 |    27 |     27 |         3 |      1 |
+|     63 |        3 |    28 |     28 |         3 |      1 |
+|     64 |        3 |    29 |     29 |         3 |      1 |
+|     65 |        3 |    33 |     33 |         3 |      1 |
+|     66 |        3 |    34 |     34 |         3 |      1 |
+|     67 |        3 |    37 |     37 |         3 |      1 |
+|     68 |        3 |    38 |     38 |         3 |      1 |
+|     69 |        3 |    39 |     39 |         3 |      1 |
+|     70 |        3 |    63 |     23 |         3 |      1 |
+|     71 |        3 |    64 |     24 |         3 |      1 |
+|     72 |        3 |    67 |     27 |         3 |      1 |
+|     73 |        3 |    68 |     28 |         3 |      1 |
+|     74 |        3 |    69 |     29 |         3 |      1 |
+|     75 |        3 |    73 |     33 |         3 |      1 |
+|     76 |        3 |    74 |     34 |         3 |      1 |
+|     77 |        3 |    77 |     37 |         3 |      1 |
+|     78 |        3 |    78 |     38 |         3 |      1 |
+|     79 |        3 |    79 |     39 |         3 |      1 |
++--------+----------+-------+--------+-----------+--------+
+
+
+                  Config. Parameters
+  ===================================================
+            name                        value
+  ------------------------   ------------------------
+      benchmark:minthreads = 4
+      benchmark:threadstep = 4
+             jana:affinity = 1
+          jana:legacy_mode = 0
+             jana:locality = 2
+  jtest:disentangler_bytes = 500000
+     jtest:disentangler_ms = 20
+        jtest:parser_bytes = 2000000
+           jtest:parser_ms = 1
+       jtest:plotter_bytes = 1000
+          jtest:plotter_ms = 20
+       jtest:tracker_bytes = 1000
+          jtest:tracker_ms = 200
+                   NEVENTS = 0
+                   plugins = JTest
+
+Start processing ...
+Waiting for event source to start producing ... rate: 0
+Waiting for event source to start producing ... rate: 3.98874
+Rate: 43.7426Hz   -  ready to begin test
+Setting NTHREADS = 4 ...
+nthreads=4  rate=30.1905Hz  (avg = 30.1905 +/- 0.0029145 Hz)
+nthreads=4  rate=4.98997Hz  (avg = 17.5902 +/- 8.90973 Hz)
+nthreads=4  rate=4.99841Hz  (avg = 13.393 +/- 6.85756 Hz)
+nthreads=4  rate=4.99841Hz  (avg = 11.2943 +/- 5.45485 Hz)
+nthreads=4  rate=3.99894Hz  (avg = 9.83524 +/- 4.55484 Hz)
+nthreads=4  rate=3.99891Hz  (avg = 8.86252 +/- 3.89819 Hz)
+nthreads=4  rate=6.99835Hz  (avg = 8.59621 +/- 3.35039 Hz)
+nthreads=4  rate=3.98952Hz  (avg = 8.02037 +/- 2.98066 Hz)
+nthreads=4  rate=6.99329Hz  (avg = 7.90625 +/- 2.65166 Hz)
+nthreads=4  rate=3.99603Hz  (avg = 7.51523 +/- 2.41515 Hz)
+nthreads=4  rate=4.99894Hz  (avg = 7.28648 +/- 2.2064 Hz)
+nthreads=4  rate=5.99875Hz  (avg = 7.17917 +/- 2.02514 Hz)
+nthreads=4  rate=5.99641Hz  (avg = 7.08819 +/- 1.8714 Hz)
+nthreads=4  rate=3.99606Hz  (avg = 6.86732 +/- 1.75072 Hz)
+nthreads=4  rate=3.99899Hz  (avg = 6.6761 +/- 1.64441 Hz)
+Setting NTHREADS = 8 ...
+nthreads=8  rate=8.49632Hz  (avg = 8.49632 +/- -nan Hz)
+nthreads=8  rate=6.99388Hz  (avg = 7.7451 +/- 0.531191 Hz)
+nthreads=8  rate=8.99101Hz  (avg = 8.16041 +/- 0.490297 Hz)
+nthreads=8  rate=7.88018Hz  (avg = 8.09035 +/- 0.372694 Hz)
+nthreads=8  rate=10.9916Hz  (avg = 8.67061 +/- 0.598544 Hz)
+nthreads=8  rate=6.99801Hz  (avg = 8.39184 +/- 0.559953 Hz)
+nthreads=8  rate=8.99325Hz  (avg = 8.47775 +/- 0.486506 Hz)
+nthreads=8  rate=8.99095Hz  (avg = 8.5419 +/- 0.429901 Hz)
+nthreads=8  rate=7.99183Hz  (avg = 8.48079 +/- 0.386455 Hz)
+nthreads=8  rate=8.99696Hz  (avg = 8.5324 +/- 0.351239 Hz)
+nthreads=8  rate=9.99354Hz  (avg = 8.66523 +/- 0.343508 Hz)
+nthreads=8  rate=10.9967Hz  (avg = 8.85952 +/- 0.365722 Hz)
+nthreads=8  rate=7.96726Hz  (avg = 8.79088 +/- 0.34397 Hz)
+nthreads=8  rate=9.99418Hz  (avg = 8.87683 +/- 0.329964 Hz)
+nthreads=8  rate=11.9967Hz  (avg = 9.08483 +/- 0.367722 Hz)
+Setting NTHREADS = 12 ...
+nthreads=12  rate=12.9823Hz  (avg = 12.9823 +/- 0.00262059 Hz)
+nthreads=12  rate=12.9741Hz  (avg = 12.9782 +/- 0.00317097 Hz)
+nthreads=12  rate=12.9673Hz  (avg = 12.9746 +/- 0.00365671 Hz)
+nthreads=12  rate=13.9932Hz  (avg = 13.2292 +/- 0.220559 Hz)
+nthreads=12  rate=10.9973Hz  (avg = 12.7828 +/- 0.436518 Hz)
+nthreads=12  rate=12.9903Hz  (avg = 12.8174 +/- 0.365133 Hz)
+nthreads=12  rate=14.9958Hz  (avg = 13.1286 +/- 0.425389 Hz)
+nthreads=12  rate=11.9914Hz  (avg = 12.9865 +/- 0.395256 Hz)
+nthreads=12  rate=13.9962Hz  (avg = 13.0987 +/- 0.366917 Hz)
+nthreads=12  rate=11.991Hz  (avg = 12.9879 +/- 0.34654 Hz)
+nthreads=12  rate=11.9882Hz  (avg = 12.897 +/- 0.326736 Hz)
+nthreads=12  rate=11.988Hz  (avg = 12.8213 +/- 0.308165 Hz)
+nthreads=12  rate=12.9871Hz  (avg = 12.834 +/- 0.284724 Hz)
+nthreads=12  rate=13.9964Hz  (avg = 12.917 +/- 0.276227 Hz)
+nthreads=12  rate=12.9645Hz  (avg = 12.9202 +/- 0.25783 Hz)
+Setting NTHREADS = 16 ...
+nthreads=16  rate=14.9913Hz  (avg = 14.9913 +/- 0.00168415 Hz)
+nthreads=16  rate=13.9962Hz  (avg = 14.4938 +/- 0.35181 Hz)
+nthreads=16  rate=13.9963Hz  (avg = 14.328 +/- 0.270817 Hz)
+nthreads=16  rate=17.9943Hz  (avg = 15.2445 +/- 0.819366 Hz)
+nthreads=16  rate=14.985Hz  (avg = 15.1926 +/- 0.657135 Hz)
+nthreads=16  rate=15.984Hz  (avg = 15.3245 +/- 0.560691 Hz)
+nthreads=16  rate=19.98Hz  (avg = 15.9896 +/- 0.781091 Hz)
+nthreads=16  rate=15.9957Hz  (avg = 15.9904 +/- 0.683455 Hz)
+nthreads=16  rate=15.9961Hz  (avg = 15.991 +/- 0.607516 Hz)
+nthreads=16  rate=15.9921Hz  (avg = 15.9911 +/- 0.546764 Hz)
+nthreads=16  rate=16.8732Hz  (avg = 16.0713 +/- 0.502905 Hz)
+nthreads=16  rate=14.9926Hz  (avg = 15.9814 +/- 0.468961 Hz)
+nthreads=16  rate=13.9863Hz  (avg = 15.8279 +/- 0.457311 Hz)
+nthreads=16  rate=15.9953Hz  (avg = 15.8399 +/- 0.424802 Hz)
+nthreads=16  rate=16.9879Hz  (avg = 15.9164 +/- 0.403318 Hz)
+Setting NTHREADS = 20 ...
+nthreads=20  rate=17.0233Hz  (avg = 17.0233 +/- 0.00223504 Hz)
+nthreads=20  rate=19.9944Hz  (avg = 18.5088 +/- 1.05041 Hz)
+nthreads=20  rate=16.9953Hz  (avg = 18.0043 +/- 0.812454 Hz)
+nthreads=20  rate=19.9941Hz  (avg = 18.5018 +/- 0.746242 Hz)
+nthreads=20  rate=20.9762Hz  (avg = 18.9966 +/- 0.743186 Hz)
+nthreads=20  rate=19.9006Hz  (avg = 19.1473 +/- 0.634408 Hz)
+nthreads=20  rate=18.981Hz  (avg = 19.1235 +/- 0.544223 Hz)
+nthreads=20  rate=16.9936Hz  (avg = 18.8573 +/- 0.537385 Hz)
+nthreads=20  rate=18.9944Hz  (avg = 18.8725 +/- 0.477892 Hz)
+nthreads=20  rate=18.9936Hz  (avg = 18.8846 +/- 0.430256 Hz)
+nthreads=20  rate=19.9949Hz  (avg = 18.9856 +/- 0.402806 Hz)
+nthreads=20  rate=19.9852Hz  (avg = 19.0689 +/- 0.377755 Hz)
+nthreads=20  rate=15.984Hz  (avg = 18.8316 +/- 0.416617 Hz)
+nthreads=20  rate=19.995Hz  (avg = 18.9147 +/- 0.395061 Hz)
+nthreads=20  rate=18.9858Hz  (avg = 18.9194 +/- 0.368752 Hz)
+Setting NTHREADS = 24 ...
+nthreads=24  rate=21.4878Hz  (avg = 21.4878 +/- 0.00310227 Hz)
+nthreads=24  rate=23.9315Hz  (avg = 22.7096 +/- 0.863967 Hz)
+nthreads=24  rate=21.9342Hz  (avg = 22.4512 +/- 0.613423 Hz)
+nthreads=24  rate=21.978Hz  (avg = 22.3329 +/- 0.471338 Hz)
+nthreads=24  rate=21.9781Hz  (avg = 22.2619 +/- 0.382375 Hz)
+nthreads=24  rate=25.9741Hz  (avg = 22.8806 +/- 0.648476 Hz)
+nthreads=24  rate=22.977Hz  (avg = 22.8944 +/- 0.555983 Hz)
+nthreads=24  rate=21.993Hz  (avg = 22.7817 +/- 0.497771 Hz)
+nthreads=24  rate=23.9836Hz  (avg = 22.9153 +/- 0.460029 Hz)
+nthreads=24  rate=22.9084Hz  (avg = 22.9146 +/- 0.414027 Hz)
+nthreads=24  rate=23.9761Hz  (avg = 23.0111 +/- 0.38747 Hz)
+nthreads=24  rate=21.9779Hz  (avg = 22.925 +/- 0.364621 Hz)
+nthreads=24  rate=24.9314Hz  (avg = 23.0793 +/- 0.36779 Hz)
+nthreads=24  rate=22.9235Hz  (avg = 23.0682 +/- 0.341687 Hz)
+nthreads=24  rate=24.9773Hz  (avg = 23.1955 +/- 0.341792 Hz)
+Setting NTHREADS = 28 ...
+nthreads=28  rate=25.2599Hz  (avg = 25.2599 +/- -nan Hz)
+nthreads=28  rate=23.9757Hz  (avg = 24.6178 +/- 0.454062 Hz)
+nthreads=28  rate=26.9735Hz  (avg = 25.403 +/- 0.709008 Hz)
+nthreads=28  rate=24.8756Hz  (avg = 25.2712 +/- 0.543877 Hz)
+nthreads=28  rate=28.8843Hz  (avg = 25.9938 +/- 0.779145 Hz)
+nthreads=28  rate=30.9691Hz  (avg = 26.823 +/- 0.997277 Hz)
+nthreads=28  rate=24.975Hz  (avg = 26.559 +/- 0.889065 Hz)
+nthreads=28  rate=11.8666Hz  (avg = 24.7225 +/- 1.88587 Hz)
+nthreads=28  rate=26.9758Hz  (avg = 24.9728 +/- 1.69286 Hz)
+nthreads=28  rate=27.9692Hz  (avg = 25.2725 +/- 1.54987 Hz)
+nthreads=28  rate=28.9025Hz  (avg = 25.6025 +/- 1.44368 Hz)
+nthreads=28  rate=28.9818Hz  (avg = 25.8841 +/- 1.35056 Hz)
+nthreads=28  rate=22.9937Hz  (avg = 25.6617 +/- 1.26484 Hz)
+nthreads=28  rate=26.8998Hz  (avg = 25.7502 +/- 1.17758 Hz)
+nthreads=28  rate=25.9928Hz  (avg = 25.7663 +/- 1.09919 Hz)
+Setting NTHREADS = 32 ...
+nthreads=32  rate=31.4258Hz  (avg = 31.4258 +/- -nan Hz)
+nthreads=32  rate=25.9927Hz  (avg = 28.7093 +/- 1.9209 Hz)
+nthreads=32  rate=31.9766Hz  (avg = 29.7984 +/- 1.55907 Hz)
+nthreads=32  rate=29.9704Hz  (avg = 29.8414 +/- 1.1699 Hz)
+nthreads=32  rate=30.9381Hz  (avg = 30.0607 +/- 0.956259 Hz)
+nthreads=32  rate=28.971Hz  (avg = 29.8791 +/- 0.813946 Hz)
+nthreads=32  rate=28.9712Hz  (avg = 29.7494 +/- 0.707927 Hz)
+nthreads=32  rate=30.9691Hz  (avg = 29.9019 +/- 0.63564 Hz)
+nthreads=32  rate=32.9671Hz  (avg = 30.2424 +/- 0.649882 Hz)
+nthreads=32  rate=28.7312Hz  (avg = 30.0913 +/- 0.602209 Hz)
+nthreads=32  rate=30.98Hz  (avg = 30.1721 +/- 0.552855 Hz)
+nthreads=32  rate=30.9689Hz  (avg = 30.2385 +/- 0.510756 Hz)
+nthreads=32  rate=30.992Hz  (avg = 30.2965 +/- 0.474744 Hz)
+nthreads=32  rate=31.8808Hz  (avg = 30.4096 +/- 0.454122 Hz)
+nthreads=32  rate=28.9431Hz  (avg = 30.3119 +/- 0.434244 Hz)
+Setting NTHREADS = 36 ...
+nthreads=36  rate=34.1388Hz  (avg = 34.1388 +/- -nan Hz)
+nthreads=36  rate=33.9703Hz  (avg = 34.0546 +/- 0.0595612 Hz)
+nthreads=36  rate=34.9651Hz  (avg = 34.3581 +/- 0.250989 Hz)
+nthreads=36  rate=30.9073Hz  (avg = 33.4954 +/- 0.770463 Hz)
+nthreads=36  rate=32.9669Hz  (avg = 33.3897 +/- 0.623577 Hz)
+nthreads=36  rate=36.9631Hz  (avg = 33.9853 +/- 0.752073 Hz)
+nthreads=36  rate=36.963Hz  (avg = 34.4106 +/- 0.755417 Hz)
+nthreads=36  rate=26.9189Hz  (avg = 33.4742 +/- 1.09739 Hz)
+nthreads=36  rate=39.9607Hz  (avg = 34.1949 +/- 1.1888 Hz)
+nthreads=36  rate=30.9923Hz  (avg = 33.8746 +/- 1.11223 Hz)
+nthreads=36  rate=31.9912Hz  (avg = 33.7034 +/- 1.02421 Hz)
+nthreads=36  rate=37.79Hz  (avg = 34.044 +/- 0.993861 Hz)
+nthreads=36  rate=35.8596Hz  (avg = 34.1836 +/- 0.927172 Hz)
+nthreads=36  rate=33.8982Hz  (avg = 34.1632 +/- 0.861169 Hz)
+nthreads=36  rate=33.9915Hz  (avg = 34.1518 +/- 0.803834 Hz)
+Setting NTHREADS = 40 ...
+nthreads=40  rate=36.78Hz  (avg = 36.78 +/- -nan Hz)
+nthreads=40  rate=38.9692Hz  (avg = 37.8746 +/- 0.773998 Hz)
+nthreads=40  rate=33.9662Hz  (avg = 36.5718 +/- 1.18229 Hz)
+nthreads=40  rate=40.989Hz  (avg = 37.6761 +/- 1.30418 Hz)
+nthreads=40  rate=35.9359Hz  (avg = 37.3281 +/- 1.0888 Hz)
+nthreads=40  rate=38.9629Hz  (avg = 37.6005 +/- 0.940807 Hz)
+nthreads=40  rate=40.9591Hz  (avg = 38.0803 +/- 0.920653 Hz)
+nthreads=40  rate=38.8059Hz  (avg = 38.171 +/- 0.810027 Hz)
+nthreads=40  rate=39.9601Hz  (avg = 38.3698 +/- 0.744017 Hz)
+nthreads=40  rate=37.9622Hz  (avg = 38.329 +/- 0.670731 Hz)
+nthreads=40  rate=35.964Hz  (avg = 38.114 +/- 0.643293 Hz)
+nthreads=40  rate=39.96Hz  (avg = 38.2679 +/- 0.6078 Hz)
+nthreads=40  rate=38.806Hz  (avg = 38.3093 +/- 0.562454 Hz)
+nthreads=40  rate=37.9904Hz  (avg = 38.2865 +/- 0.522739 Hz)
+nthreads=40  rate=40.9692Hz  (avg = 38.4653 +/- 0.517582 Hz)
+Setting NTHREADS = 44 ...
+nthreads=44  rate=41.191Hz  (avg = 41.191 +/- 0.00664954 Hz)
+nthreads=44  rate=42.8252Hz  (avg = 42.0081 +/- 0.5778 Hz)
+nthreads=44  rate=40.9469Hz  (avg = 41.6543 +/- 0.481457 Hz)
+nthreads=44  rate=41.9742Hz  (avg = 41.7343 +/- 0.367677 Hz)
+nthreads=44  rate=42.9525Hz  (avg = 41.978 +/- 0.366071 Hz)
+nthreads=44  rate=34.9686Hz  (avg = 40.8097 +/- 1.10922 Hz)
+nthreads=44  rate=44.687Hz  (avg = 41.3636 +/- 1.08024 Hz)
+nthreads=44  rate=42.9473Hz  (avg = 41.5616 +/- 0.963179 Hz)
+nthreads=44  rate=42.9671Hz  (avg = 41.7178 +/- 0.868728 Hz)
+nthreads=44  rate=42.8713Hz  (avg = 41.8331 +/- 0.789477 Hz)
+nthreads=44  rate=40.8775Hz  (avg = 41.7462 +/- 0.72247 Hz)
+nthreads=44  rate=41.502Hz  (avg = 41.7259 +/- 0.662551 Hz)
+nthreads=44  rate=40.9589Hz  (avg = 41.6669 +/- 0.614208 Hz)
+nthreads=44  rate=41.9582Hz  (avg = 41.6877 +/- 0.570688 Hz)
+nthreads=44  rate=41.99Hz  (avg = 41.7078 +/- 0.532998 Hz)
+Setting NTHREADS = 48 ...
+nthreads=48  rate=44.174Hz  (avg = 44.174 +/- -nan Hz)
+nthreads=48  rate=48.8759Hz  (avg = 46.5249 +/- 1.66236 Hz)
+nthreads=48  rate=45.9787Hz  (avg = 46.3428 +/- 1.11816 Hz)
+nthreads=48  rate=41.9896Hz  (avg = 45.2545 +/- 1.26158 Hz)
+nthreads=48  rate=45.989Hz  (avg = 45.4014 +/- 1.01778 Hz)
+nthreads=48  rate=48.7799Hz  (avg = 45.9645 +/- 0.991756 Hz)
+nthreads=48  rate=41.9902Hz  (avg = 45.3968 +/- 0.999467 Hz)
+nthreads=48  rate=46.9881Hz  (avg = 45.5957 +/- 0.894108 Hz)
+nthreads=48  rate=44.977Hz  (avg = 45.5269 +/- 0.797401 Hz)
+nthreads=48  rate=44.9551Hz  (avg = 45.4697 +/- 0.719709 Hz)
+nthreads=48  rate=44.9225Hz  (avg = 45.42 +/- 0.655998 Hz)
+nthreads=48  rate=46.987Hz  (avg = 45.5506 +/- 0.61419 Hz)
+nthreads=48  rate=41.958Hz  (avg = 45.2742 +/- 0.626037 Hz)
+nthreads=48  rate=45.8625Hz  (avg = 45.3162 +/- 0.582728 Hz)
+nthreads=48  rate=42.957Hz  (avg = 45.159 +/- 0.564707 Hz)
+Setting NTHREADS = 52 ...
+nthreads=52  rate=48.5839Hz  (avg = 48.5839 +/- 0.00844132 Hz)
+nthreads=52  rate=46.7256Hz  (avg = 47.6548 +/- 0.657065 Hz)
+nthreads=52  rate=50.9872Hz  (avg = 48.7656 +/- 1.00722 Hz)
+nthreads=52  rate=48.9873Hz  (avg = 48.821 +/- 0.756939 Hz)
+nthreads=52  rate=48.9881Hz  (avg = 48.8544 +/- 0.606289 Hz)
+nthreads=52  rate=47.8922Hz  (avg = 48.6941 +/- 0.526022 Hz)
+nthreads=52  rate=49.9877Hz  (avg = 48.8789 +/- 0.482244 Hz)
+nthreads=52  rate=43.967Hz  (avg = 48.2649 +/- 0.712672 Hz)
+nthreads=52  rate=47.8563Hz  (avg = 48.2195 +/- 0.634931 Hz)
+nthreads=52  rate=47.9886Hz  (avg = 48.1964 +/- 0.571858 Hz)
+nthreads=52  rate=45.9873Hz  (avg = 47.9956 +/- 0.554013 Hz)
+nthreads=52  rate=49.9223Hz  (avg = 48.1561 +/- 0.530602 Hz)
+nthreads=52  rate=45.9887Hz  (avg = 47.9894 +/- 0.515315 Hz)
+nthreads=52  rate=45.877Hz  (avg = 47.8385 +/- 0.50011 Hz)
+nthreads=52  rate=43.9898Hz  (avg = 47.5819 +/- 0.528507 Hz)
+Setting NTHREADS = 56 ...
+nthreads=56  rate=51.897Hz  (avg = 51.897 +/- -nan Hz)
+nthreads=56  rate=49.9874Hz  (avg = 50.9422 +/- 0.675126 Hz)
+nthreads=56  rate=52.9707Hz  (avg = 51.6184 +/- 0.7123 Hz)
+nthreads=56  rate=50.9879Hz  (avg = 51.4608 +/- 0.551389 Hz)
+nthreads=56  rate=52.854Hz  (avg = 51.7394 +/- 0.506644 Hz)
+nthreads=56  rate=48.9881Hz  (avg = 51.2808 +/- 0.594544 Hz)
+nthreads=56  rate=57.5414Hz  (avg = 52.1752 +/- 0.972273 Hz)
+nthreads=56  rate=52.9867Hz  (avg = 52.2766 +/- 0.856014 Hz)
+nthreads=56  rate=48.779Hz  (avg = 51.888 +/- 0.844525 Hz)
+nthreads=56  rate=49.9001Hz  (avg = 51.6892 +/- 0.783118 Hz)
+nthreads=56  rate=50.9871Hz  (avg = 51.6254 +/- 0.714522 Hz)
+nthreads=56  rate=56.9855Hz  (avg = 52.0721 +/- 0.782231 Hz)
+nthreads=56  rate=48.878Hz  (avg = 51.8264 +/- 0.759667 Hz)
+nthreads=56  rate=58.9842Hz  (avg = 52.3376 +/- 0.86042 Hz)
+nthreads=56  rate=48.8627Hz  (avg = 52.106 +/- 0.833663 Hz)
+Setting NTHREADS = 60 ...
+nthreads=60  rate=51.9568Hz  (avg = 51.9568 +/- -nan Hz)
+nthreads=60  rate=50.9883Hz  (avg = 51.4725 +/- 0.342427 Hz)
+nthreads=60  rate=57.9869Hz  (avg = 53.644 +/- 1.78763 Hz)
+nthreads=60  rate=52.9876Hz  (avg = 53.4799 +/- 1.34823 Hz)
+nthreads=60  rate=49.9895Hz  (avg = 52.7818 +/- 1.24627 Hz)
+nthreads=60  rate=53.987Hz  (avg = 52.9827 +/- 1.05462 Hz)
+nthreads=60  rate=51.9889Hz  (avg = 52.8407 +/- 0.913467 Hz)
+nthreads=60  rate=54.9878Hz  (avg = 53.1091 +/- 0.837783 Hz)
+nthreads=60  rate=48.9893Hz  (avg = 52.6513 +/- 0.860712 Hz)
+nthreads=60  rate=54.9886Hz  (avg = 52.8851 +/- 0.805752 Hz)
+nthreads=60  rate=53.5797Hz  (avg = 52.9482 +/- 0.734972 Hz)
+nthreads=60  rate=54.7725Hz  (avg = 53.1002 +/- 0.689268 Hz)
+nthreads=60  rate=55.9439Hz  (avg = 53.319 +/- 0.670058 Hz)
+nthreads=60  rate=59.8804Hz  (avg = 53.7877 +/- 0.768826 Hz)
+nthreads=60  rate=50.9884Hz  (avg = 53.601 +/- 0.739874 Hz)
+Setting NTHREADS = 64 ...
+nthreads=64  rate=52.0603Hz  (avg = 52.0603 +/- -nan Hz)
+nthreads=64  rate=56.9863Hz  (avg = 54.5233 +/- 1.74161 Hz)
+nthreads=64  rate=54.9097Hz  (avg = 54.6521 +/- 1.16583 Hz)
+nthreads=64  rate=53.9462Hz  (avg = 54.4757 +/- 0.887626 Hz)
+nthreads=64  rate=57.8841Hz  (avg = 55.1573 +/- 0.935947 Hz)
+nthreads=64  rate=54.781Hz  (avg = 55.0946 +/- 0.782054 Hz)
+nthreads=64  rate=51.8913Hz  (avg = 54.637 +/- 0.792993 Hz)
+nthreads=64  rate=57.9475Hz  (avg = 55.0508 +/- 0.794538 Hz)
+nthreads=64  rate=50.8476Hz  (avg = 54.5838 +/- 0.832272 Hz)
+nthreads=64  rate=46.9061Hz  (avg = 53.816 +/- 1.04479 Hz)
+nthreads=64  rate=60.9865Hz  (avg = 54.4679 +/- 1.13509 Hz)
+nthreads=64  rate=56.8988Hz  (avg = 54.6705 +/- 1.05843 Hz)
+nthreads=64  rate=54.777Hz  (avg = 54.6787 +/- 0.97704 Hz)
+nthreads=64  rate=53.9875Hz  (avg = 54.6293 +/- 0.908498 Hz)
+nthreads=64  rate=55.9872Hz  (avg = 54.7198 +/- 0.85243 Hz)
+Setting NTHREADS = 68 ...
+nthreads=68  rate=59.4805Hz  (avg = 59.4805 +/- 0.00183508 Hz)
+nthreads=68  rate=55.9441Hz  (avg = 57.7123 +/- 1.25028 Hz)
+nthreads=68  rate=57.8266Hz  (avg = 57.7504 +/- 0.834111 Hz)
+nthreads=68  rate=57.9869Hz  (avg = 57.8095 +/- 0.627676 Hz)
+nthreads=68  rate=57.8972Hz  (avg = 57.827 +/- 0.502388 Hz)
+nthreads=68  rate=55.7768Hz  (avg = 57.4853 +/- 0.52209 Hz)
+nthreads=68  rate=56.773Hz  (avg = 57.3836 +/- 0.457317 Hz)
+nthreads=68  rate=53.9879Hz  (avg = 56.9591 +/- 0.563709 Hz)
+nthreads=68  rate=57.7778Hz  (avg = 57.0501 +/- 0.508361 Hz)
+nthreads=68  rate=54.9877Hz  (avg = 56.8438 +/- 0.497604 Hz)
+nthreads=68  rate=59.9863Hz  (avg = 57.1295 +/- 0.528044 Hz)
+nthreads=68  rate=57.9719Hz  (avg = 57.1997 +/- 0.488684 Hz)
+nthreads=68  rate=50.9882Hz  (avg = 56.7219 +/- 0.643602 Hz)
+nthreads=68  rate=58.7787Hz  (avg = 56.8688 +/- 0.614169 Hz)
+nthreads=68  rate=55.5451Hz  (avg = 56.7806 +/- 0.579529 Hz)
+Setting NTHREADS = 72 ...
+nthreads=72  rate=52.5276Hz  (avg = 52.5276 +/- 0.00635733 Hz)
+nthreads=72  rate=61.8872Hz  (avg = 57.2074 +/- 3.30914 Hz)
+nthreads=72  rate=60.9391Hz  (avg = 58.4513 +/- 2.42866 Hz)
+nthreads=72  rate=55.9869Hz  (avg = 57.8352 +/- 1.89803 Hz)
+nthreads=72  rate=57.5484Hz  (avg = 57.7778 +/- 1.51929 Hz)
+nthreads=72  rate=52.9878Hz  (avg = 56.9795 +/- 1.46084 Hz)
+nthreads=72  rate=56.9867Hz  (avg = 56.9805 +/- 1.25215 Hz)
+nthreads=72  rate=58.9863Hz  (avg = 57.2313 +/- 1.12045 Hz)
+nthreads=72  rate=55.9874Hz  (avg = 57.093 +/- 1.00444 Hz)
+nthreads=72  rate=58.9412Hz  (avg = 57.2779 +/- 0.920846 Hz)
+nthreads=72  rate=54.7264Hz  (avg = 57.0459 +/- 0.865853 Hz)
+nthreads=72  rate=54.9876Hz  (avg = 56.8744 +/- 0.810511 Hz)
+nthreads=72  rate=53.987Hz  (avg = 56.6523 +/- 0.778002 Hz)
+nthreads=72  rate=54.8064Hz  (avg = 56.5204 +/- 0.733518 Hz)
+nthreads=72  rate=61.9379Hz  (avg = 56.8816 +/- 0.768403 Hz)
+Setting NTHREADS = 76 ...
+nthreads=76  rate=44.8416Hz  (avg = 44.8416 +/- -nan Hz)
+nthreads=76  rate=65.9814Hz  (avg = 55.4115 +/- 7.47405 Hz)
+nthreads=76  rate=55.9863Hz  (avg = 55.6031 +/- 4.98516 Hz)
+nthreads=76  rate=55.9867Hz  (avg = 55.699 +/- 3.73979 Hz)
+nthreads=76  rate=56.9862Hz  (avg = 55.9564 +/- 3.00068 Hz)
+nthreads=76  rate=53.7276Hz  (avg = 55.585 +/- 2.52346 Hz)
+nthreads=76  rate=55.9861Hz  (avg = 55.6423 +/- 2.16361 Hz)
+nthreads=76  rate=57.8455Hz  (avg = 55.9177 +/- 1.91061 Hz)
+nthreads=76  rate=55.8322Hz  (avg = 55.9082 +/- 1.69834 Hz)
+nthreads=76  rate=50.9495Hz  (avg = 55.4123 +/- 1.59926 Hz)
+nthreads=76  rate=60.8173Hz  (avg = 55.9037 +/- 1.52749 Hz)
+nthreads=76  rate=60.9392Hz  (avg = 56.3233 +/- 1.4567 Hz)
+nthreads=76  rate=54.9871Hz  (avg = 56.2205 +/- 1.34827 Hz)
+nthreads=76  rate=57.8402Hz  (avg = 56.3362 +/- 1.25692 Hz)
+nthreads=76  rate=51.9881Hz  (avg = 56.0463 +/- 1.20608 Hz)
+Setting NTHREADS = 80 ...
+nthreads=80  rate=13.3913Hz  (avg = 13.3913 +/- -nan Hz)
+nthreads=80  rate=48.7562Hz  (avg = 31.0738 +/- 12.5034 Hz)
+nthreads=80  rate=69.721Hz  (avg = 43.9562 +/- 13.4209 Hz)
+nthreads=80  rate=45.8624Hz  (avg = 44.4327 +/- 10.0741 Hz)
+nthreads=80  rate=61.9859Hz  (avg = 47.9434 +/- 8.64938 Hz)
+nthreads=80  rate=53.9879Hz  (avg = 48.9508 +/- 7.26625 Hz)
+nthreads=80  rate=53.9705Hz  (avg = 49.6679 +/- 6.2635 Hz)
+nthreads=80  rate=65.7327Hz  (avg = 51.676 +/- 5.79353 Hz)
+nthreads=80  rate=48.9887Hz  (avg = 51.3774 +/- 5.15749 Hz)
+nthreads=80  rate=53.988Hz  (avg = 51.6385 +/- 4.64835 Hz)
+nthreads=80  rate=57.7986Hz  (avg = 52.1985 +/- 4.25937 Hz)
+nthreads=80  rate=72.7819Hz  (avg = 53.9138 +/- 4.23574 Hz)
+nthreads=80  rate=89.4788Hz  (avg = 56.6495 +/- 4.71128 Hz)
+nthreads=80  rate=106.468Hz  (avg = 60.208 +/- 5.55848 Hz)
+nthreads=80  rate=92.8141Hz  (avg = 62.3817 +/- 5.59684 Hz)
+Writing test results to: JANA_Test_Results
+Testing finished
+/bin/cp -p cpuinfo.txt /home/nbrei/jana-perf-testing/tuning/exp8/cpuinfo.txt
+/bin/cp -p JANA_Test_Results/rates.dat /home/nbrei/jana-perf-testing/tuning/exp8/rates.dat
+/bin/cp -p JANA_Test_Results/samples.dat /home/nbrei/jana-perf-testing/tuning/exp8/samples.dat

@@ -76,4 +76,28 @@ plot1.add_exp('exp5', 'CPU', 'magenta', "s")
 plot1.create(loc="lower right")
 
 
+plot2 = PlotDef()
+plot2.filename = "affinity_memory"
+plot2.title = "JANA2 locality strategies, memory-bound affinity (uses fewer locations)"
+
+plot2.add_exp('exp6', 'Global', 'green', "s")
+plot2.add_exp('exp7', 'Socket', 'blue', "s")
+plot2.add_exp('exp8', 'NUMA domain', 'cyan', "s")
+plot2.add_exp('exp9', 'Core', 'black', "s")
+plot2.add_exp('exp10', 'CPU', 'magenta', "s")
+
+plot2.create(loc="lower right")
+
+plot3 = PlotDef()
+plot3.filename = "affinity_compute"
+plot3.title = "JANA2 locality strategies, compute-bound affinity (uses more locations)"
+
+plot3.add_exp('exp11', 'Global', 'green', "s")
+plot3.add_exp('exp12', 'Socket', 'blue', "s")
+plot3.add_exp('exp13', 'NUMA domain', 'cyan', "s")
+plot3.add_exp('exp14', 'Core', 'black', "s")
+plot3.add_exp('exp15', 'CPU', 'magenta', "s")
+
+plot3.create(loc="lower right")
+
 
