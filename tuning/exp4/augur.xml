@@ -4,8 +4,7 @@
     <Track name="debug"/>
     <Name name="jana2_tuning_exp4"/>
     <NodeTag name="farm18"/>
-    <CPU core="80"/>
-    <Memory space="6" unit="GB"/>
+    <CPU core="0"/>
     <Command><![CDATA[ 
         /home/nbrei/jana-perf-testing/tuning/exp4/augur.sh
         ]]></Command>

@@ -104,7 +104,7 @@ class TestMatrix:
         },
 
         "farm18":  {
-            "cores": 80,
+            "cores": 0,
             "benchmark:minthreads": 4,
             "benchmark:maxthreads": 80,
             "benchmark:threadstep": 4,
@@ -114,7 +114,7 @@ class TestMatrix:
         },
 
         "farm14":  {
-            "cores": 40,
+            "cores": 0,
             "benchmark:minthreads": 4,
             "benchmark:maxthreads": 48,
             "benchmark:threadstep": 4,
