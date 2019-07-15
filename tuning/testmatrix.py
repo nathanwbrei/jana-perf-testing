@@ -8,7 +8,7 @@ class TestMatrix:
         "comment": "Examine how different affinity/locality strategies affect throughput",
         "git_commit": "be8fc5d94a6f7bcb4159101b05dc0523cd3e037d",
         "scenario": "JTest",
-        "platform": "farm18",
+        "platform": "coriknl",
         "results_dir_local": "/u/home/nbrei/jana-perf-testing",
         "jana:event_queue_threshold": 80,
         "jana:legacy_mode": 0,
