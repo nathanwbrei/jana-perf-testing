@@ -1,25 +1,23 @@
 Architecture:          x86_64
 CPU op-mode(s):        32-bit, 64-bit
 Byte Order:            Little Endian
-CPU(s):                80
-On-line CPU(s) list:   0-79
-Thread(s) per core:    2
-Core(s) per socket:    20
-Socket(s):             2
-NUMA node(s):          4
+CPU(s):                272
+On-line CPU(s) list:   0-271
+Thread(s) per core:    4
+Core(s) per socket:    68
+Socket(s):             1
+NUMA node(s):          1
 Vendor ID:             GenuineIntel
 CPU family:            6
-Model:                 85
-Model name:            Intel(R) Xeon(R) Gold 6148 CPU @ 2.40GHz
-Stepping:              4
-CPU MHz:               2394.371
-BogoMIPS:              4793.21
-Virtualization:        VT-x
+Model:                 87
+Model name:            Intel(R) Xeon Phi(TM) CPU 7250 @ 1.40GHz
+Stepping:              1
+CPU MHz:               1401.000
+CPU max MHz:           1401.0000
+CPU min MHz:           1000.0000
+BogoMIPS:              2799.79
 L1d cache:             32K
 L1i cache:             32K
 L2 cache:              1024K
-L3 cache:              28160K
-NUMA node0 CPU(s):     0-2,5,6,10-12,15,16,40-42,45,46,50-52,55,56
-NUMA node1 CPU(s):     3,4,7-9,13,14,17-19,43,44,47-49,53,54,57-59
-NUMA node2 CPU(s):     20-22,25,26,30-32,35,36,60-62,65,66,70-72,75,76
-NUMA node3 CPU(s):     23,24,27-29,33,34,37-39,63,64,67-69,73,74,77-79
+NUMA node0 CPU(s):     0-271
+Flags:                 fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc ring3mwait aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl est tm2 ssse3 fma cx16 xtpr pdcm sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch ida arat epb pln pts dtherm spec_ctrl kaiser fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms avx512f rdseed adx avx512pf avx512er avx512cd xsaveopt
