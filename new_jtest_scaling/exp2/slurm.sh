@@ -3,7 +3,7 @@
 #SBATCH --job-name=jana2_new_jtest_scaling_exp2
 #SBATCH --qos=debug
 #SBATCH --nodes=1
-#SBATCH --time=30
+#SBATCH --time=15
 #SBATCH --constraint=knl
 #SBATCH --cpus-per-task=272
 
