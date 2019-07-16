@@ -62,53 +62,48 @@ class PlotDef:
 
 
 
+plot4 = PlotDef()
+plot4.filename = "plot_summary_coriknl"
+plot4.title = "JANA2 affinity/locality tuning (Cori KNL)"
 
 plot1 = PlotDef()
-plot1.filename = "locality"
+plot1.filename = "plot_localities_with_no_affinity_coriknl"
 plot1.title = "JANA2 locality strategies, no affinity"
 
-plot1.add_exp('exp1', 'Global', 'green', "s")
-plot1.add_exp('exp2', 'Socket', 'blue', "s")
-plot1.add_exp('exp3', 'NUMA domain', 'cyan', "s")
+plot1.add_exp('exp1', 'Global', 'magenta', "s")
+plot4.add_exp('exp1', 'Global locality, no affinity', 'magenta', "s")
+#plot1.add_exp('exp2', 'Socket', 'blue', "s")
+#plot1.add_exp('exp3', 'NUMA domain', 'cyan', "s")
 plot1.add_exp('exp4', 'Core', 'black', "s")
-plot1.add_exp('exp5', 'CPU', 'magenta', "s")
+plot4.add_exp('exp4', 'Core locality, no affinity', 'black', "s")
+plot1.add_exp('exp5', 'CPU', 'green', "s")
 
 plot1.create(loc="lower right")
 
 
 plot2 = PlotDef()
-plot2.filename = "affinity_memory"
+plot2.filename = "plot_localities_with_memory_affinity_coriknl"
 plot2.title = "JANA2 locality strategies, memory-bound affinity (uses fewer locations)"
 
-plot2.add_exp('exp6', 'Global', 'green', "s")
-plot2.add_exp('exp7', 'Socket', 'blue', "s")
-plot2.add_exp('exp8', 'NUMA domain', 'cyan', "s")
-plot2.add_exp('exp9', 'Core', 'black', "s")
-plot2.add_exp('exp10', 'CPU', 'magenta', "s")
+plot2.add_exp('exp6', 'Global', 'magenta', "^")
+#plot2.add_exp('exp7', 'Socket', 'blue', "^")
+#plot2.add_exp('exp8', 'NUMA domain', 'cyan', "^")
+plot2.add_exp('exp9', 'Core', 'black', "^")
+plot4.add_exp('exp9', 'Core locality, memory affinity', 'black', "^")
+plot2.add_exp('exp10', 'CPU', 'green', "^")
 
 plot2.create(loc="lower right")
 
 plot3 = PlotDef()
-plot3.filename = "affinity_compute"
+plot3.filename = "plot_localities_with_compute_affinity_coriknl"
 plot3.title = "JANA2 locality strategies, compute-bound affinity (uses more locations)"
 
-plot3.add_exp('exp11', 'Global', 'green', "s")
-plot3.add_exp('exp12', 'Socket', 'blue', "s")
-plot3.add_exp('exp13', 'NUMA domain', 'cyan', "s")
-plot3.add_exp('exp14', 'Core', 'black', "s")
-plot3.add_exp('exp15', 'CPU', 'magenta', "s")
+plot3.add_exp('exp11', 'Global', 'magenta', "o")
+#plot3.add_exp('exp12', 'Socket', 'blue', "o")
+#plot3.add_exp('exp13', 'NUMA domain', 'cyan', "o")
+plot3.add_exp('exp14', 'Core', 'black', "o")
+plot4.add_exp('exp14', 'Core locality, compute affinity', 'black', "o")
+plot3.add_exp('exp15', 'CPU', 'green', "o")
 
 plot3.create(loc="lower right")
-
-
-plot4 = PlotDef()
-plot4.filename = "comparison_of_best"
-plot4.title = "JANA2 affinity/locality tuning"
-
-plot4.add_exp('exp1', 'No affinity, global locality', 'green', "s")
-plot4.add_exp('exp13', 'Compute-bound affinity, NUMA locality', 'cyan', "o")
-plot4.add_exp('exp14', 'Compute-bound affinity, core locality', 'blue', "o")
-plot4.add_exp('exp6', 'Memory-bound affinity, global locality', 'black', "^")
-plot4.add_exp('exp9', 'Memory-bound affinity, core locality', 'blue', "^")
-
 plot4.create(loc="lower right")
